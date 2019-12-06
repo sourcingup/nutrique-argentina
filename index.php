@@ -7,7 +7,7 @@
 	<title>Nutrique - Un nuevo paradigma en alimentación para tu mascota</title>
 
 	<?php include 'includes/includes.php';?>
-	
+	 
 	<!--[if IE]>
 		<script type="text/javascript">
 			 var console = { log: function() {} };
@@ -406,7 +406,7 @@
 
 		var w = window.innerWidth;
 		if (w < 768) {
-			$('.item.healthyUrinary img').attr('src', 'images/banner-special-care-mobile3c.png');
+			$('.item.healthyUrinary img').attr('src', 'images/banner-special-care-mobile9.png');
 		}else{
 			$('.item.healthyUrinary img').attr('src', 'images/banner-special-care3.png');
 		}
@@ -429,7 +429,7 @@
 		console.log(w);
 
 		if (w < 768) {
-			$('.item.healthyUrinary img').attr('src', 'images/banner-special-care-mobile3c.png')
+			$('.item.healthyUrinary img').attr('src', 'images/banner-special-care-mobile9.png')
 		}
 	});
 	

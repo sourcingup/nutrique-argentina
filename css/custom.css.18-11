@@ -465,7 +465,6 @@ a{
 			font-size: 60px;
 			color: #000000;
 			line-height: 60px;
-			margin:0!important; 
 		}
 		.page3 .info .linea{
 			margin: 10px 0;
@@ -473,32 +472,12 @@ a{
 			.page3 .productos{
 				padding: 0;
 			}
-			.page3 .productos .specialBox .cucarda{
-						position: absolute;
-						padding: 0;
-						top: 0;
-    					left: 0;
-						z-index: 2;
-					}
-				.page3 .productos .specialBox{
-					display: inline-block;
-					/*background-image: url(../images/recuadro-nutrique.png);
-					background-size: 100% 100%;
-					background-repeat: no-repeat;*/
-					padding: 10px 4.16%;
-					/*border: 2px solid #222;*/
-					margin: 25px 0 0;
-				}
-					.page3 .productos .specialBox .producto{
-						float: left;
-					}
 				.page3 .productos .special-care{
 					font-family: 'Bebas Neue';
 				    font-size: 50px;
 				    color: #000000;
 				    line-height: 50px;
 				    margin: 25px 0;
-				    margin-top: 10px;
 				}
 			.page3 .productos .producto{
 				display: inline-block;
@@ -1606,12 +1585,6 @@ a{
 			color: #231f20;
 			margin: 0;
 		}
-		body#product .productInfo h2{
-			font-size: 32px;
-			font-weight: 600;
-		    line-height: 26px;
-		    margin: 6px 0;
-		}
 		body#product .productInfo h3, body#product .productInfo p{
 			font-size: 16px;
 			color: #231f20;
@@ -1833,7 +1806,7 @@ a{
 		
 	body#product.productos .page2 .productos .producto{
 		float: left;
-		margin: 25px 0 0;
+		margin: 25px 0;
 		vertical-align: top;
 	}
 		body#product.productos .page2 .productos .producto.twoInLine{
@@ -1846,9 +1819,6 @@ a{
 				}
 				body#product.productos .page2 .productos .producto{
 					height: 280px;
-				}
-				.page3 .productos .special-care{
-					font-size: 40px;
 				}
 			}
 		body#product.productos .page2 .productos .producto p {
@@ -2042,7 +2012,7 @@ a{
 		}
 		.page3 .productos .producto{
 		    float: left;
-		    /*height: 325px;*/
+		    height: 325px;
 		}
 		body#product .productPopUp{
 			/*height: 100%;*/
@@ -2050,14 +2020,12 @@ a{
 			
 			position: relative;
             background-color: #FFF;
-            margin-top: -125%;
+            margin-top: -120%;
             z-index: 20;
             float: left;
             width: 100%;
 		}
-		    body#product .productPopUp.urinary{
-		    	margin-top: -126.5%;
-		    }
+		    
 		header{
 			background-color: rgba(255, 255, 255, 0.95);
 			padding-top: 10px;
@@ -2458,7 +2426,7 @@ a{
 				margin-top: 0;
 			}
 			.pupUpItem.ingredientes, .pupUpItem.porcion{
-			    padding: 20% 10px;
+			    padding: 15% 10px;
 			}
 		body#bowl .page1{
 			background-image: none;
@@ -2576,8 +2544,7 @@ a{
 			}
 			body#product .productProteins.new div span span{
 				font-size: 28px;
-				line-height: 60px;
-    			text-align: center;
+				line-height: 36px;
 			}
 			body#product .productLinks a{
 				font-size: 21px;
@@ -2589,7 +2556,7 @@ a{
 			    line-height: 28px;
 			}
 		body#product .productos{
-			margin-top: 60px;
+			margin-top: 100px;
 		}
 			body#product .hidden-xs{
 				display: none;
@@ -3273,22 +3240,9 @@ a{
 			  opacity: 1;
 			}
 
-@media (min-width: 300px) and (max-width: 330px){
+@media (min-width: 300px) and (max-width: 400px){
 	.page1 .producto{
 		margin: 0 -25px;
-	}
-	body#product .productos {
-	    margin-top: 50px;
-	}
-}
-@media (min-width: 331px) and (max-width: 400px){
-	.page1 .producto{
-		margin: 0 -28px;
-	}
-}
-@media (min-width: 401px) and (max-width: 450px){
-	body#product .productos {
-	    margin-top: 50px;
 	}
 }
 			
@@ -3950,11 +3904,7 @@ a{
 		}
 	}
 	
-	
 	@media only screen and (max-width: 767px) {
-		body#product.productos .productos .special-care{
-			display: inline-block;
-		}
 		body#bowl .container div{
 		    float: none;
 		    display: inline-block;
@@ -4182,37 +4132,3 @@ a{
 			margin-top: 175px;
 		}
 	}
-	
-	
-	body#product.productos .page2 .productos .specialBox .producto a{
-							position: relative;
-						}
-						body#product.productos .productos .specialBox .cucarda{
-							position: absolute;
-							width: 40%;
-							padding: 0;
-							top: 0;
-	    					left: 0;
-							z-index: 2;
-						}
-
-body#product.productos .productos .special-care{
-	font-family: 'Bebas Neue';
-    font-size: 44px;
-    color: #000000;
-    line-height: 50px;
-    margin: 25px 0;
-}
-
-.specialLine{
-	display: inline-block;
-}
-
-@media only screen and (max-width: 330px) {
-	body#product.productos .productos .special-care{
-		font-size: 36px;
-	}
-	
-	 h2.wow.animated.flipInY.animated {
-    margin: 0!important;
-}
