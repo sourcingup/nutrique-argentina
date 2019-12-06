@@ -1,0 +1,131 @@
+			.verdura{
+				opacity: 0;
+				transform: translate(0, 500px);
+				filter: blur(5px);
+				transition: all 1000ms;
+				transition-timing-function: ease-out;
+			}
+			.section.page3 .verdura{
+				transform: translate(0);
+				filter: blur(0);
+				opacity: 1;
+			}
+			#bannersBowls .verdura{
+				transform: scale(0.1);
+			}
+				#bannersBowls .verdura.perro-02, #bannersBowls .verdura.gato-02{
+					transform: translate(0, -500px);
+				}
+			/*.verdura.aceite, .verdura.coco{
+				transform: translate(500px, 0);
+			}
+			.verdura.calabaza{
+				transition-delay: 600ms;
+				transform: translate(-500px, 0);
+			}
+			.verdura.chia, .verdura.manzanilla{
+				transform: translate(-500px, 0);
+			}*/
+				/*.verdura:nth-child(even){
+					transition: all 1000ms;
+				}
+				.verdura:nth-child(3n+0){
+					transition: all 1500ms;
+				}*/
+				
+			.slick-active .verdura{
+				transform: translate(0);
+				filter: blur(0);
+				opacity: 1;
+			}
+				.slick-active .verduras .verdura.ginger, .slick-active .verduras .verdura.coco{
+					transition-delay: 200ms;
+				}
+				.slick-active .verduras .verdura.manzanilla, .slick-active .verduras .verdura.aceite{
+					transition-delay: 400ms;
+				}
+				.slick-active .verduras .verdura.chia, .slick-active .verduras .verdura.recipiente{
+					transition-delay: 1200ms;
+				}
+				.slick-active .verduras .verdura.menta, .slick-active .verduras .verdura.pavo{
+					transition-delay: 1600ms;
+				}
+				.slick-active .verduras .verdura.huevo, .slick-active .verduras .verdura.blueberry{
+					transition-delay: 1800ms;
+				}
+			.slick-active #bannersBowls .verdura{
+				transform: scale(1);
+				filter: blur(0);
+			}
+			.slick-active #bannersBowls .verdura.perro-02, .slick-active #bannersBowls .verdura.gato-02{
+				transform: translate(0);
+				filter: blur(0);
+			}
+				.slick-active #bannersBowls .verdura.bowl-02{
+					transition-delay: 600ms;
+				}
+				.slick-active #bannersBowls .verdura.perro{
+					transition-delay: 1200ms;
+				}
+				.slick-active #bannersBowls .verdura.gato{
+					transition-delay: 1500ms;
+				}
+			
+			.single-item .slick-list #bannerProductos.item .productos .producto:nth-child(1) .verdura{transition: all 1000ms;}
+			.single-item .slick-list #bannerProductos.item .productos .producto:nth-child(2) .verdura{transition: all 1100ms;}
+			.single-item .slick-list #bannerProductos.item .productos .producto:nth-child(3) .verdura{transition: all 1200ms;}
+			.single-item .slick-list #bannerProductos.item .productos .producto:nth-child(4) .verdura{transition: all 1300ms;}
+			.single-item .slick-list #bannerProductos.item .productos .producto:nth-child(5) .verdura{transition: all 1400ms;}
+			.single-item .slick-list #bannerProductos.item .productos .producto:nth-child(6) .verdura{transition: all 1500ms;}
+			.single-item .slick-list #bannerProductos.item .productos .producto:nth-child(7) .verdura{transition: all 1600ms;}
+			.single-item .slick-list #bannerProductos.item .productos .producto:nth-child(8) .verdura{transition: all 1700ms;}
+			.single-item .slick-list #bannerProductos.item .productos .producto:nth-child(9) .verdura{transition: all 1800ms;}
+			
+			
+			.slick-active#slick-slide00 .verdura.firstAnimation{
+				animation-duration: 2000ms;
+				animation-name: firstAnimation;
+			}
+			.slick-active#slick-slide00 .verdura.firstAnimation:nth-child(odd){
+				animation-name: firstAnimationOdd;
+			}
+				@keyframes firstAnimation{
+					0%{
+						opacity: 0;
+						transform: translate(0, 500px);
+						filter: blur(5px);
+					}
+					50%{
+						transform: translate(0);
+						filter: blur(0);
+						opacity: 1;
+					}
+				}
+				@keyframes firstAnimationOdd{
+					0%{
+						opacity: 0;
+						transform: translate(0, 500px);
+						filter: blur(5px);
+					}
+					50%{
+						transform: translate(0);
+						filter: blur(0);
+						opacity: 1;
+					}
+				}
+				
+			.slick-active#slick-slide00 .verduras .verdura.ginger.firstAnimation, .slick-active#slick-slide00 .verduras .verdura.coco.firstAnimation{
+				animation-duration: 2200ms;
+			}
+			.slick-active#slick-slide00 .verduras .verdura.manzanilla.firstAnimation, .slick-active#slick-slide00 .verduras .verdura.aceite.firstAnimation{
+				animation-duration: 2700ms;
+			}
+			.slick-active#slick-slide00 .verduras .verdura.chia.firstAnimation, .slick-active#slick-slide00 .verduras .verdura.recipiente.firstAnimation{
+				animation-duration: 3200ms;
+			}
+			.slick-active#slick-slide00 .verduras .verdura.menta.firstAnimation, .slick-active#slick-slide00 .verduras .verdura.pavo.firstAnimation{
+				animation-duration: 3600ms;
+			}
+			.slick-active#slick-slide00 .verduras .verdura.huevo.firstAnimation, .slick-active#slick-slide00 .verduras .verdura.blueberry.firstAnimation{
+				animation-duration: 3800ms;
+			}

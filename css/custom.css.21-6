@@ -1,0 +1,3943 @@
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('../fonts/subset-BebasNeueBold.woff2') format('woff2'),
+        url('../fonts/subset-BebasNeueBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('../fonts/subset-BebasNeueRegular.woff2') format('woff2'),
+        url('../fonts/subset-BebasNeueRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Frutiger LT Std';
+    src: url('../fonts/subset-FrutigerLTStd-Light.woff2') format('woff2'),
+        url('../fonts/subset-FrutigerLTStd-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+html{
+  height: 100%;
+}
+a{
+	outline: none;
+}
+	body{
+		padding: 0;
+		text-align: center;
+		position: relative;
+		margin: 0;
+		height: 100%;
+		-webkit-font-smoothing: antialiased;
+		font-family: 'Frutiger LT Std';
+	}
+	
+	.wow {
+	  visibility: hidden;
+	}
+	
+	.wrapper {
+		height: 100% !important;
+		height: 100%;
+		margin: 0 auto; 
+		overflow: hidden;
+	}
+	
+	header{
+		position: fixed !important;
+		/*width: 90%;
+		padding: 0 5%;*/
+		margin-top: 25px;
+		z-index: 21;
+	}
+		header #logo{
+			float: left;
+		}
+			header #logo img{
+				width: 100%;
+				margin: 0;
+			}
+		header #menuButton{
+			position: relative;
+			float: right;
+			padding: 2px 8px;
+			background-color: #000;
+			font-size: 22px;
+			color: #fff;
+			z-index: 22;
+		}
+	
+	header #menu{
+		position: fixed;
+		height: 100%;
+		background-color: #FFF;
+		top: 0;
+		right: 0;
+		z-index: 21;
+	}
+		header #menu #close{
+			position: relative;
+			float: left;
+			padding: 2px 8px;
+			background-color: #000;
+			font-size: 22px;
+			color: #fff;
+			z-index: 4;
+			margin-top: 10px;
+		}
+		header #menu #logo-menu{
+			float:left;
+			clear: left;
+			margin-top: 10px;
+		}
+			header #menu #logo-menu img{
+				width: 100%;
+			}
+		header #menu h3 a{
+			float:left;
+			width: 80%;
+			font-family: 'Bebas Neue';
+			font-size: 25px;
+			color: #1d1d1b;
+			text-align: center;
+			margin: 20px 10%;
+			text-decoration: none;
+		}
+		header #menu ul{
+			float: left;
+			width: 80%;
+			padding: 0;
+			list-style: none;
+			margin: 0 10%;
+			text-align: center;
+		}
+			header #menu ul li a{
+				display: inline-block;
+				padding: 8px 0;
+				font-family: 'Bebas Neue';
+				font-size: 22px;
+				color: #1d1d1b;
+				line-height: 25px;
+				text-decoration: none;
+			}
+				header #menu ul li.nosotros a, header #menu ul li.contacto a{
+					color: #6f7073;
+				}
+		header #ig{
+			display: inline-block;
+			text-align: center;
+		}
+			header #ig img{
+				width: 100%;
+			}
+	
+	.item{
+		float: left;
+	}
+	.slick-slide{
+		outline: none;
+	}
+	.slick-arrow{
+		display: none !important;
+	}
+	#section0{
+		float: left;
+		width: 100%;
+	}
+	.section{
+		float: left;
+		width: 100%;
+	}
+	.page1 {
+		background-image: url(../images/slider-back.jpg);
+		background-size: auto 100%;
+    }
+		.page1 .info{
+			text-align: center;
+		}
+			.page1 .info2{
+				margin-top: 70px;
+			}
+			.page1 .single-item{
+				overflow: hidden;
+				height: 100%;
+			}
+			.page1 .info h1{
+				font-family: 'Bebas Neue';
+				font-size: 40px;
+				color: #000000;
+				line-height: 40px;
+			}
+			.page1 .info p{
+				display: inline-block;
+				width: 50%;
+				font-size: 18px;
+				color: #000000;
+				line-height: 22px;
+			}
+				body#product .page1 .info p{font-size: 16px;}
+			.page1 .info .btns a{
+				display: inline-block;
+				width: 175px;
+				transition: all 400ms;
+			}
+				.page1 .info .btns a img{
+					width: 100%;
+				}
+				.page1 .info .btns a:hover{
+					transform: scale(1.1);
+				}
+			.page1 .info .linea{
+				margin: 20px 0;
+			}
+			    body#ingredientes .page1 .info .linea{
+			        margin: 5px;
+			    }
+			     body#ingredientes .page1 .info span{
+			         font-weight: 600;
+			     }
+		.verduras{
+			position: relative;
+			z-index: 2;
+			top: 0;
+			float: left;
+			margin-top: -450px;
+		}
+			.verduras .verdurasLeft, .verduras .verdurasCenter{
+				float: left;
+			}
+			.verduras .verdurasRight{
+				float: right;
+			}
+			.verduras .verdura{
+				position: absolute;
+				max-width: 100%;
+				/*transform: translate(0, 500px);
+				filter: blur(5px);*/
+				transition: all 600ms;
+				transition-timing-function: ease-out;
+				/*animation-fill-mode: inherit !important;*/
+			}
+				.verduras .verdura:nth-child(even){
+					transition: all 800ms;
+				}
+				.verduras .verdura:nth-child(3n+0){
+					transition: all 1200ms;
+				}
+			.fp-section.active .verduras .verdura{
+				transform: translate(0);
+				filter: blur(0);
+			}
+				.verduras .calabaza{
+					margin-top: 200px;
+					margin-left: -80px;
+				}
+				.verduras .manzanilla{
+					margin-top: 420px;
+					margin-left: -30px;
+					max-width: 30%;
+				}
+				.verduras .chia{
+					margin-top: 420px;
+					margin-left: 30px;
+					max-width: 50%;
+				}
+				.verduras .ginger{
+					margin-top: 350px;
+					margin-left: 140px;
+					max-width: 60%;
+				}
+				.verduras .huevo{
+					margin-top: 500px;
+					margin-left: 100px;
+					max-width: 70%;
+				}
+				.verduras .gato{
+					margin-top: 520px;
+					margin-left: -100px;
+					max-width: 35%;
+				}
+				
+				.verduras .pavo{
+					margin-top: 450px;
+					margin-left: 380px;
+					max-width: 100%;
+				}
+				
+				.verduras .hinojo{
+					margin-top: 120px;
+					margin-left: 200px;
+					max-width: 50%;
+				}
+				.verduras .coco{
+					margin-top: 290px;
+					margin-left: 50px;
+					max-width: 60%;
+				}
+				.verduras .aceite{
+					margin-top: 280px;
+					margin-left: 300px;
+					max-width: 30%;
+				}
+				.verduras .recipiente{
+					margin-top: 340px;
+					margin-left: 100px;
+					max-width: 70%;
+				}
+				.verduras .menta{
+					margin-top: 425px;
+					margin-left: 200px;
+					max-width: 25%;
+				}
+				.verduras .arandanos-rojos{
+					margin-top: 450px;
+					margin-left: 30px;
+					max-width: 35%;
+				}
+				.verduras .blueberry{
+					margin-top: 520px;
+					margin-left: 90px;
+					max-width: 50%;
+				}
+				.verduras .perro{
+					margin-top: 500px;
+					margin-left: 280px;
+					max-width: 55%;
+				}
+				
+				.verduras .bowl-01{
+					margin-top: 120px;
+					margin-left: -50%;
+					max-width: 125%;
+				}
+				.verduras .bowl-02{
+					margin-top: 120px;
+					margin-left: 15%;
+					max-width: 125%;
+				}
+				.verduras .perro-02{
+					margin-top: -20px;
+					margin-left: 300px;
+					max-width: 50%;
+				}
+				.verduras .gato-02{
+					margin-top: -10px;
+					margin-left: 580px;
+					max-width: 50%;
+				}
+				
+		.page1 .productos{
+			text-align: center;
+			margin-top: 5px;
+		}
+		.page1 .producto {
+			display: inline-block;
+			margin: 0 -40px;
+			transition: all 500ms;
+		}
+			.page1 .producto:hover{
+				transform: scale(1.1);
+			}
+			.page1 .producto:nth-child(1) img, .page1 .producto:nth-child(9) img{
+				width: 70%;
+			}
+			.page1 .producto:nth-child(2) img, .page1 .producto:nth-child(8) img{
+				width: 80%;
+				transition-delay: 200ms;
+			}
+			.page1 .producto:nth-child(3) img, .page1 .producto:nth-child(7) img{
+				width: 90%;
+				transition-delay: 400ms;
+			}
+			.page1 .producto:nth-child(4) img, .page1 .producto:nth-child(6) img{
+				width: 100%;
+				transition-delay: 600ms;
+			}
+			.page1 .producto:nth-child(5){
+				z-index: 4;
+			}
+			.page1 .producto:nth-child(6){
+				z-index: 3;
+			}
+			.page1 .producto:nth-child(7){
+				z-index: 2;
+			}
+			.page1 .producto:nth-child(8){
+				z-index: 1;
+			}
+			.page1 .producto img{
+				width: 110%;
+			}
+	
+	.page2 {
+		background-image: url(../images/homeUltraPremium/ultra-back.jpg);
+		background-size: 100%;
+		text-align: center;
+		padding-top: 50px;
+		padding-bottom: 50px;
+    }
+		.page2 .info{
+			margin-top: 100px;
+		}
+		.page2 h2{
+			font-family: 'Bebas Neue';
+			font-size: 60px;
+			color: #000000;
+			line-height: 60px;
+		}
+		.page2 .info .linea{
+			margin: 20px 0;
+		}
+		#section1 .column{
+			float: left;
+		}
+			#section1 .column img{
+				max-width: 100%;
+			}
+				#section1 .column img.absolute{
+					position: absolute;
+					top: 0;
+					left: 0;
+				}
+				#section1 .column a{
+					cursor: pointer;
+				}
+					#section1 .column a:hover img{
+						transform: scale(1.1);
+					}
+		
+	#section1{
+		min-height: 1200px;;
+	}
+	.verduras .premiumBack{
+		width: 100%;
+	}
+	.verduras .premiumBack:nth-child(1){
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+				
+	.page3 {
+		width: 100%;
+		text-align: center;
+    }
+		.page3 .info{
+			margin-top: 25px;
+		}
+		.page3 h2{
+			font-family: 'Bebas Neue';
+			font-size: 60px;
+			color: #000000;
+			line-height: 60px;
+		}
+		.page3 .info .linea{
+			margin: 10px 0;
+		}
+			.page3 .productos{
+				padding: 0;
+			}
+			.page3 .productos .producto{
+				display: inline-block;
+				padding: 0;
+				vertical-align: top;
+			}
+				.page3 .productos .producto a {text-decoration: none;}
+				.page3 .productos .producto a img{
+					width: 100%;
+					transition: all 400ms;
+					backface-visibility: hidden;
+				}
+				
+				.page3 .productos .producto a  :hover{    transform: scale(1.1);}
+				.page3 .productos .producto p{
+					font-family: 'Bebas Neue';
+					font-size: 16px;
+					color: #000000;
+				}
+		.perroProductos{
+			position: absolute !important;
+			margin-top: 700px;
+			margin-left: -50%;
+		}
+		.gatoProductos{
+			margin-top: -240px;
+			margin-left: 90%;
+		}
+		#section2 > div > div.col-12 > a > img:hover{
+			transform: scale(1.1);
+		}
+		
+	.slick-dots{
+		position: absolute;
+		width: 100%;
+		/*margin-top: -15px;*/
+		bottom: -15px;
+		text-align: center;
+		padding: 0;
+	}
+		.slick-dots li{
+			display: inline-block;
+			margin: 0 10px;
+		}
+			.slick-dots li button{
+				width: 10px;
+				height: 10px;
+				background-color: #000;
+				border-radius: 50px;
+				border: 0;
+				text-indent: -9999px;
+				padding: 0;
+				opacity: 0.6;
+			}
+				.slick-dots li.slick-active button{
+					opacity: 1;
+				}
+	
+	#video{
+		float: left;
+		width: 100%;
+	}
+	
+	body#ultra-premium .page1{
+		background-image: none;
+	}
+	body#ultra-premium .leftColumnUltra{
+		position: relative;
+		float: left;
+		width: 50%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		overflow: hidden;
+		background-image: url(../images/ultra/ultra-back.jpg);
+		background-size: 100%;
+	}
+		body#ultra-premium .info{
+			width: 60%;
+			margin: 0 20%;
+			margin-top: 25%;
+		}
+			body#ultra-premium .page1 .info p{
+				width: 100%;
+			}
+			body#ultra-premium .info .corona{
+				display: inline-block;
+				margin: 20px 0;
+			}
+			body#ultra-premium .info .coronaBottom{
+				transform: rotate(-180deg);
+			}
+	
+	body#ultra-premium .single-item{
+		/*position: fixed;*/
+		position: relative;
+		float: left;
+		width: 50%;
+		height: 100%;
+		top: 0;
+		right: 0;
+	}
+		body#ultra-premium .single-item .item{
+			position: relative;
+			float: left;
+			width: 100%;
+			/*height: 70%;
+			padding-top: 15%;
+			padding-bottom: 15%;*/
+			text-align: center;
+			overflow: hidden;
+			background-color: #fff;
+			z-index: 2;
+		}
+		body#ultra-premium .single-item .item h3{
+			position: absolute;
+			width: 50%;
+			margin: 0 25%;
+			font-family: 'Bebas Neue';
+			font-size: 300px;
+			color: #eaeaea;
+			
+			transform: translate(0, -500px);
+			filter: blur(10px);
+			transition: all 600ms;
+		}
+		body#ultra-premium .single-item .item p{
+			width: 50%;
+			margin: 0 25%;
+			font-family: 'Bebas Neue';
+			font-size: 30px;
+			font-weight: normal;
+			color: #231f20;
+			margin-top: 150px;
+			z-index: 2;
+			position: relative;
+			
+			transform: translate(0, 500px);
+			filter: blur(10px);
+			transition: all 800ms;
+		}
+			
+			body#ultra-premium .single-item.slick-active p, body#ultra-premium .single-item.slick-active h3{
+				transform: translate(0);
+				filter: blur(0);
+			}
+			body#ultra-premium .single-item.slick-active .icons p{
+				transform: scale(1);
+				filter: blur(0);
+			}
+		
+		body#ultra-premium .single-item .icons{
+			margin-top: 200px;
+		}
+			body#ultra-premium .single-item .icons p{
+				float: left;
+				font-size: 13px;
+				margin: 0;
+				text-align: center;
+				
+				transform: scale(0.1);
+				filter: blur(10px);
+				transition: all 500ms;
+				transition-delay: 1000ms;
+			}
+			body#ultra-premium .single-item .icons img{
+				display: inline-block;
+				width: 20px;
+			}
+			body#ultra-premium .tabla{
+				max-width: 75%;
+				margin-top: 25px;
+			}
+		body#ultra-premium .slick-dots{
+			position: fixed;
+			left: 45%;
+			bottom: 50%;
+			margin: 0;
+			transform: rotate(90deg);
+		}
+			body#ultra-premium .slick-dots li button{
+				opacity: 0.3;
+			}
+			body#ultra-premium .slick-dots li.slick-active button{
+				opacity: 1;
+			}
+		body#ultra-premium table{
+			float: left;
+			width: 70%;
+			margin-left: 50px;
+			margin-top: 25px;
+		}
+			body#ultra-premium table tr{
+				font-family: 'Frutiger LT Std';
+				font-weight: 600;
+				border-bottom: 2px solid #a1a1a0;
+				
+				transform: translate(0, 500px);
+				filter: blur(10px);
+				transition: all 600ms;
+			}
+				body#ultra-premium .slick-active table tr{
+					transform: translate(0);
+					filter: blur(0);
+				}
+				
+				body#ultra-premium table tr:nth-child(2){
+					transition-delay: 200ms;
+				}
+				body#ultra-premium table tr:nth-child(3){
+					transition-delay: 400ms;
+				}
+				body#ultra-premium table tr:nth-child(4){
+					transition-delay: 600ms;
+				}
+				body#ultra-premium table tr:nth-child(5){
+					transition-delay: 800ms;
+				}
+				body#ultra-premium table tr:nth-child(6){
+					transition-delay: 1000ms;
+				}
+				body#ultra-premium table tr:nth-child(7){
+					transition-delay: 1200ms;
+				}
+				body#ultra-premium table tr:nth-child(8){
+					transition-delay: 1400ms;
+				}
+				body#ultra-premium table tr:nth-child(9){
+					transition-delay: 1600ms;
+				}
+				body#ultra-premium table tr:nth-child(10){
+					transition-delay: 1800ms;
+				}
+				body#ultra-premium table tr:nth-child(11){
+					transition-delay: 2000ms;
+				}
+				
+				body#ultra-premium table tr td{
+					padding: 5px 0;
+				}
+				body#ultra-premium table tr td:first-child{
+					font-family: 'Bebas Neue';
+					font-size: 40px;
+					font-weight: 700;
+					color: #ababab;
+					line-height: 40px;
+				}
+				body#ultra-premium table tr td:nth-child(2){
+					font-size: 15px;
+					color: #1d1d1b;
+					padding: 0 20px;
+				}
+				body#ultra-premium table tr:first-child td:nth-child(3), body#ultra-premium table tr:first-child td:nth-child(4){
+					font-size: 12px;
+					color: #1d1d1b;
+					line-height: 14px;
+				}
+				
+				body#ultra-premium table tr td:nth-child(3) img, body#ultra-premium table tr td:nth-child(3) span, body#ultra-premium table tr td:nth-child(4) img{
+					display: inline-block;
+					opacity:0;
+					transform: scale(0.1);
+					transition: all 500ms;
+				}
+					body#ultra-premium .slick-active table tr td:nth-child(3) img, body#ultra-premium .slick-active table tr td:nth-child(3) span, body#ultra-premium .slick-active table tr td:nth-child(4) img{
+						opacity:1;
+						transform: scale(1);
+					}
+					body#ultra-premium table tr:nth-child(2) td:nth-child(3) img{
+						transition-delay: 2200ms;
+					}
+					body#ultra-premium table tr:nth-child(3) td:nth-child(3) img{
+						transition-delay: 2400ms;
+					}
+					body#ultra-premium table tr:nth-child(4) td:nth-child(3) img{
+						transition-delay: 2600ms;
+					}
+					body#ultra-premium table tr:nth-child(5) td:nth-child(3) img{
+						transition-delay: 2800ms;
+					}
+					body#ultra-premium table tr:nth-child(6) td:nth-child(3) span{
+						transition-delay: 3000ms;
+					}
+					body#ultra-premium table tr:nth-child(7) td:nth-child(3) img{
+						transition-delay: 3200ms;
+					}
+					body#ultra-premium table tr:nth-child(8) td:nth-child(3) img{
+						transition-delay: 3400ms;
+					}
+					body#ultra-premium table tr:nth-child(9) td:nth-child(3) img{
+						transition-delay: 3600ms;
+					}
+					body#ultra-premium table tr:nth-child(10) td:nth-child(3) img{
+						transition-delay: 3800ms;
+					}
+					body#ultra-premium table tr:nth-child(11) td:nth-child(3) span{
+						transition-delay: 4000ms;
+					}
+					
+					body#ultra-premium table tr:nth-child(2) td:nth-child(4) img{
+						transition-delay: 4200ms;
+					}
+					body#ultra-premium table tr:nth-child(3) td:nth-child(4) img{
+						transition-delay: 4400ms;
+					}
+					body#ultra-premium table tr:nth-child(4) td:nth-child(4) img{
+						transition-delay: 4600ms;
+					}
+					body#ultra-premium table tr:nth-child(5) td:nth-child(4) img{
+						transition-delay: 4800ms;
+					}
+					body#ultra-premium table tr:nth-child(6) td:nth-child(4) img{
+						transition-delay: 5000ms;
+					}
+					body#ultra-premium table tr:nth-child(7) td:nth-child(4) img{
+						transition-delay: 5200ms;
+					}
+					body#ultra-premium table tr:nth-child(8) td:nth-child(4) img{
+						transition-delay: 5400ms;
+					}
+					body#ultra-premium table tr:nth-child(9) td:nth-child(4) img{
+						transition-delay: 5600ms;
+					}
+					body#ultra-premium table tr:nth-child(10) td:nth-child(4) img{
+						transition-delay: 5800ms;
+					}
+					body#ultra-premium table tr:nth-child(11) td:nth-child(4) img{
+						transition-delay: 6000ms;
+					}
+					
+			body#ultra-premium table tr img{
+				width: 15px;
+			}
+			body#ultra-premium table tr span{
+				font-size: 12px;
+				color: red;
+			}
+		
+	footer{
+		float: left;
+		width: 100%;
+		background-color: #111111;
+		padding: 10px 0;
+		padding-bottom: 0;
+		margin-top: 100px;
+	}
+	    body#bowl footer, body#conoce-nutrique footer{
+	        margin-top:0;
+	    }
+		body#product footer{
+			margin-top: 100px;
+		}
+		body#ultra-premium footer{
+			position: relative;
+			z-index: 99;
+			margin-top: 0;
+		}
+		footer .container div{
+			float: left;
+		}
+			footer div img{
+				width: 100%;
+			}
+			footer .container ul{
+				float: left;
+				width: 100%;
+				list-style: none;
+				margin: 10px 0;
+				padding: 0;
+			}
+				footer .container ul li a{
+					display: inline-block;
+					font-family: 'Bebas Neue';
+					color: #FFF;
+					font-size: 18px;
+					line-height: 20px;
+				}
+	body#bowl.pack footer.green{
+		background-color: #fff;
+	}
+			body#bowl.pack footer.green div img{
+				width: 70%;
+				margin-top: 15px;
+			}
+			body#bowl.pack footer.green div p{
+				font-size: 13px;
+				margin-top: 20px;
+			}
+				body#bowl.pack footer.green div p span{
+					color: #999;
+				}
+		#in360{
+			position: absolute;
+			top: 100px;
+			left: 20px;
+			z-index: 9;
+		}
+		body#bowl.pack .container div #tressesenta{
+			text-align: center;
+			position: absolute;
+			margin-top: -50px;
+		}		
+			body#bowl.pack .container div #tressesenta img{
+				width: auto !important;
+			}
+				
+		footer .instagram, body#bowl footer .container  .instagram{
+			width: 50%;
+		}
+	body#bowl .container div{
+		float: left;
+	}
+		body#bowl .page1 .info{
+			margin: 0;
+			margin-top: 100px;
+		}
+		body#bowl .page1 .info .linea{
+			margin: 0;
+		}
+		body#bowl .container div img{
+			width: 100%;
+		}
+		body#bowl .page1 .info h1{
+			font-size: 32px;
+			line-height: 32px;
+			width:100%; /*JEM*/
+		}
+		body#bowl .page1 .info p{
+			width: 100%;
+			font-size: 16px;
+			line-height: 20px;
+		}
+		body#bowl .container .ingredientes img.bowl-ingredientes{
+			width: 100%;
+			margin: 25px 0;
+			margin-top: -150px;
+		}
+		body#bowl .container .ingredientes{
+			margin-top: 150px;
+		}
+		body#bowl .container ul#lista-ingredientes{
+			float: left;
+			width: 100%;
+			list-style: none;
+			padding: 0;
+			margin: 0;
+			text-align: right;
+			margin-top: 130px;
+		}
+			body#bowl.para-gatos .container ul#lista-ingredientes{
+				margin-top: 105px;
+			}
+			body#bowl .container ul#lista-ingredientes li a{
+				display: inline-block;
+				padding: 4px 10px;
+				font-family: 'Frutiger LT Std';
+				font-size: 16px;
+				line-height: 16px;
+				color: #000000;
+				text-decoration: none;
+				transition: all 200ms;
+			}
+				body#bowl.para-gatos .container ul#lista-ingredientes li a{
+					padding: 2px 10px;
+					font-size: 14px;
+					line-height: 14px;
+				}
+				body#bowl .container ul#lista-ingredientes li a:hover, body#bowl .container ul#lista-ingredientes li a.active{
+					background-color: #000;
+					color: #fff;
+				}
+			body#bowl .container .dots .dot{
+				display: none;
+				position: absolute;
+				cursor: pointer;
+				width: auto;
+				margin: 0;
+				border-radius: 20px;
+				transform: scale(0.9);
+				transition: all 300ms;
+				animation-name: bounceIn;
+				animation-duration: 3000ms;
+				animation-iteration-count: infinite;
+			}
+				body#bowl .container .dots .dot:nth-child(odd){
+					animation-delay: 1s;
+				}
+				@keyframes bounceIn {
+					0% {
+						transform: scale(0.9);
+						background-color: rgba(255, 255, 255, 0);
+					}
+					25% {
+						transform: scale(1.1);
+						background-color: rgba(255, 255, 255, 0.5);
+					}
+					30%{
+						transform: scale(0.9);
+						background-color: rgba(255, 255, 255, 0);
+					}
+				}
+				body#bowl .container .dots .dot:hover{
+					transform: scale(1);
+					background-color: rgba(0, 0, 0, 0.2);
+				}
+				body#bowl .container .dots .dot.pavo{
+					display: block;
+					margin-top: 30px;
+					margin-left: 310px;
+				}
+				body#bowl .container .dots .dot.cerdo{
+					margin-top: 30px;
+					margin-left: 180px;
+				}
+				body#bowl .container .dots .dot.huevo{
+					margin-top: 60px;
+					margin-left: 380px;
+				}
+				body#bowl .container .dots .dot.blueberries{
+					margin-top: 150px;
+					margin-left: 150px;
+				}
+				body#bowl .container .dots .dot.te-verde{
+					margin-top: 210px;
+					margin-left: 130px;
+				}
+				body#bowl .container .dots .dot.zapallo{
+					margin-top: 220px;
+					margin-left: 240px;
+				}
+				body#bowl .container .dots .dot.hinojo{
+					margin-top: 195px;
+					margin-left: 325px;
+				}
+				body#bowl .container .dots .dot.manzanilla{
+					margin-top: 145px;
+					margin-left: 375px;
+				}
+				body#bowl .container .dots .dot.jengibre{
+					margin-top: 160px;
+					margin-left: 430px;
+				}
+				body#bowl .container .dots .dot.arroz{
+					margin-top: 195px;
+					margin-left: 330px;
+				}
+				body#bowl .container .dots .dot.menta{
+					margin-top: 220px;
+					margin-left: 305px;
+				}
+				body#bowl .container .dots .dot.extracto{
+					margin-top: 80px;
+					margin-left: 290px;
+				}
+				body#bowl .container .dots .dot.aceites{
+					margin-top: 260px;
+					margin-left: 380px;
+				}
+				
+				/* PARA GATOS */
+				
+				body#bowl{
+					/*overflow: hidden;*/
+				}
+				
+				body#bowl.para-gatos .container .dots .dot.pavo{
+					display: block;
+					margin-top: 90px;
+					margin-left: 310px;
+				}
+				body#bowl.para-gatos .container .dots .dot.cerdo {
+					margin-top: 0px;
+					margin-left: 300px;
+				}
+				body#bowl.para-gatos .container .dots .dot.zapallo {
+					margin-top: 10px;
+					margin-left: 190px;
+				}
+				body#bowl.para-gatos .container .dots .dot.menta {
+					margin-top: 160px;
+					margin-left: 130px;
+				}
+				body#bowl.para-gatos .container .dots .dot.cranberries {
+					margin-top: 230px;
+					margin-left: 145px;
+				}
+				body#bowl.para-gatos .container .dots .dot.psyillium {
+					margin-top: 210px;
+					margin-left: 195px;
+				}
+				body#bowl.para-gatos .container .dots .dot.tomate {
+					margin-top: 270px;
+					margin-left: 235px;
+				}
+				body#bowl.para-gatos .container .dots .dot.coco {
+					margin-top: 275px;
+					margin-left: 315px;
+				}
+				body#bowl.para-gatos .container .dots .dot.extracto {
+					margin-top: 130px;
+					margin-left: 310px;
+				}
+				body#bowl.para-gatos .container .dots .dot.jengibre {
+					margin-top: 230px;
+					margin-left: 400px;
+				}
+				
+				
+				body#bowl figure#mouse-pointer {
+					background-image: url('../images/bowl-dot.png');
+					width: 25px;
+					height: 25px;
+					border-radius: 20px;
+					transform: scale(0.9);
+					background-color: rgba(0, 0, 0, 0.2);
+					position: absolute;
+					margin-left: -12px; 
+					display: block;
+					background-repeat: no-repeat;
+					/*transition: all 300ms;*/
+					animation-delay: 500ms;
+					animation-name: bounceIn2;
+					animation-duration: 1000ms;
+					animation-iteration-count: infinite;
+				}
+
+				@keyframes bounceIn2 {
+					0% {
+						transform: scale(0.9);
+						background-color: rgba(0, 0, 0, 0);
+					}
+					50% {
+						transform: scale(1.1);
+						background-color: rgba(0, 0, 0, 0.4);
+					}
+					100%{
+						transform: scale(0.9);
+						background-color: rgba(0, 0, 0, 0);
+					}
+				}
+				
+				span.clase{
+					display: none;
+				}
+		
+		body#bowl .container #selectedInfo{
+			float: left;
+			margin-top: -75px;
+		}
+			body#bowl .container #selectedInfo .selectedInfoText{
+				position: relative;
+			}
+				body#bowl .container #selectedInfo .selectedInfoText .selected{
+					display: none;
+					/*float: none;*/
+				}
+			body#bowl .container #selectedInfo img{
+				position: relative;
+				float: left;
+				width: 20px;
+			}
+				body#bowl .container #selectedInfo img.selectedLine{
+					width: 100%;
+				}
+				body#bowl .container #selectedInfo div:last-child img{
+					float: right;
+				}
+			body#bowl .container #selectedInfo h3{
+				display: table-cell;
+                height: 56px;
+                width: auto;
+                vertical-align: middle;
+                font-family: 'Bebas Neue';
+                font-size: 23px;
+                line-height: 23px;
+                color: #000000;
+                text-align: center;
+                margin-top: 10px;
+			}
+			body#bowl .container  #selectedInfo p{
+				display: table-cell;
+                height: 56px;
+                padding: 0;
+                font-size: 12px;
+                line-height: 12px;
+                /* margin-top: 10px; */
+                vertical-align: middle;
+			}
+			body#bowl .nutricionTitle{
+				width: 100%;
+				font-family: 'Bebas Neue';
+				text-align: center;
+				line-height: 35px;
+				margin-top: 20px;
+			}
+			/*body#bowl .verdura{
+				transform: translate(0, 500px);
+				filter: blur(5px);
+				transition: all 600ms;
+				transition-timing-function: ease-out;
+				/*animation-fill-mode: inherit !important;
+			}
+				body#bowl .verdura:nth-child(even){
+					transition: all 800ms;
+				}
+				body#bowl .verdura:nth-child(3n+0){
+					transition: all 1200ms;
+				}
+			body#bowl .verdura{
+				transform: translate(0);
+				filter: blur(0);
+			}*/
+	
+	body#ingredientes{
+		text-align: center;
+	}
+		body#ingredientes .ingredientes-back{
+			position: absolute;
+			width: 100%;
+			top: 0;
+			left: 0;
+		}
+		body#ingredientes .page1{
+			background-image: url(../images/ingredientes-back.jpg);
+			overflow: hidden;
+			position: relative;
+			background-size: 100%;
+		}
+		body#ingredientes .page1 .info p{
+			float: left;
+			font-size: 15px;
+		}
+		body#ingredientes .page1 .info{
+			margin-top: 150px;
+		}
+		
+	body#ingredientes .ingredientesTitle{
+		font-family: 'Bebas Neue';
+		    font-size: 40px;
+            color: #000000;
+            line-height: 40px;
+	}
+	
+	body#ingredientes .page2{
+		background-image: none;
+		background-color: #fff;
+	}
+		body#ingredientes .ingredientes{
+			margin-top: 50px;
+			text-align: center;
+		}
+			body#ingredientes .ingredientes div{
+				float: left;
+			}
+			    body#ingredientes .ingredientes .ingrediente {
+                    height: 300px;
+                }
+				body#ingredientes .ingredientes .titulo{
+					padding: 75px 0;
+				}
+					body#ingredientes .ingredientes .titulo.linea2{
+						padding: 50px 0;
+					}
+					body#ingredientes .ingredientes .titulo.linea3{
+						padding: 25px 0;
+					}
+			.ingredientes .titulo img{
+				width: 80%;
+				margin: 0 10%;
+			}
+			.ingredientes .titulo h3{
+				font-family: 'Bebas Neue';
+				font-size: 50px;
+				color: #231f20;
+				line-height: 50px;
+				margin-top: 10px;
+			}
+			.ingredientes .titulo p{
+				font-size: 13px;
+				color: #231f20;
+			}
+			.ingredientes .ingrediente a img{
+				width: 100%;
+				transition: all 200ms;
+			}
+				.ingredientes .ingrediente a img.lines{
+					width: auto;
+					margin: 0 5px;
+					animation-duration: 3000ms;
+					animation-name: linesMove;
+					animation-iteration-count: infinite;
+				}
+					@keyframes linesMove{
+						0%{
+							margin: 0 5px;
+						}
+						20%{
+							margin: 0 10px;
+						}
+						40%{
+							margin: 0 5px;
+						}
+					}
+			.ingredientes .ingrediente a span{
+				float: left;
+				width: 100%;
+				font-family: 'Bebas Neue';
+				font-size: 22px;
+				color: #231f20;
+			}
+			.ingredientes .ingrediente a:hover strong{
+				opacity: 1;
+				transform: scale(1);
+			}
+			.ingredientes .ingrediente a:hover img{
+				opacity: 1;
+				transform: scale(1.2);
+				transition: all 5000ms;
+			}
+			.ingredientes .ingrediente a:active strong{
+				background-color: rgba(255, 255, 255, 1);
+			}
+			.ingredientes .ingrediente a strong{
+				opacity: 0;
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				padding: 0 15px;
+				padding-top: 50px;
+				background-color: rgba(255, 255, 255, 0.7);
+				top: 0;
+				left: 0;
+				font-size: 11px;
+				color: #1d1d1b;
+				transition: all 500ms;
+				transform: scale(0.1);
+			}
+				.ingredientes .ingrediente a strong i{
+					display: inline-block;
+					font-style: normal;
+					font-weight: normal;
+					clear: left;
+					width: 100%;
+				}
+				.ingredientes .ingrediente a strong .corona{
+					display: inline-block;
+					width: auto;
+					margin: 10px 0;
+				}
+					.ingredientes .ingrediente a strong .coronaLast{
+						transform: rotate(180deg);
+					}
+					
+	body#bowl.pack .page1{
+		background-image: none;
+	}
+		body#bowl.pack .container .ingredientes img.bowl-ingredientes{
+			margin-top: -50px;
+		}
+		/*body#bowl.pack .container #mySpriteSpin, body#bowl.pack .container #mySpriteSpin .spritespin-stage{
+			width: 100% !important;
+		}*/
+		body#bowl.pack .container div img.corona{
+			width: auto !important;
+			margin: 20px;
+		}
+			body#bowl.pack .container div img.corona.coronaLast{
+				transform: rotate(180deg);
+			}
+			
+		body#bowl.pack .container .info:first-child{
+			padding: 0;
+			margin-top: 150px;
+		}
+		body#bowl.pack .page1 .info h1 {
+			font-size: 40px;
+			line-height: 40px;
+			margin: 0;
+		}
+		body#bowl.pack .container #selectedInfo{
+			margin-top: 200px;
+			padding: 0;
+		}
+			body#bowl.pack .container #selectedInfo h3{
+				font-size: 40px;
+			}
+			body#bowl.pack .container #selectedInfo p{
+				padding: 0;
+				text-align: center;
+				font-size: 12px;
+				line-height: 18px;
+			}
+		
+		body#bowl.pack .container #mySpriteSpin img{
+			cursor: grab;
+			width: 100% !important;
+			height: auto !important;
+		}
+			body#bowl.pack .container div img:active, body#bowl.pack .container div img:focus{
+				cursor: grabbing;
+			}
+		body#bowl.pack .container .ingredientes{
+			margin-top: 100px;
+		}
+		
+		body#bowl.pack .container .dots .dot{z-index:9;}
+		
+		body#bowl.pack .container .dots .dot-1{
+			display: block;
+			margin-top: 170px;
+			margin-left: 60px;
+		}
+		body#bowl.pack .container .dots .dot-2{
+			margin-top: 35px;
+			margin-left: 45px;
+		}
+		body#bowl.pack .container .dots .dot-3{
+			margin-top: 30px;
+			margin-left: 130px;
+		}
+		body#bowl.pack .container .dots .dot-4{
+			margin-top: 0px;
+			margin-left: 64%;
+		}
+		body#bowl.pack .container .dots .dot-5{
+			margin-top: 120px;
+			margin-left: 64%;
+		}
+		body#bowl.pack .container .dots .dot-6{
+			margin-top: 220px;
+			margin-left: 64%;
+		}
+		body#bowl.pack .container .dots .dot-7{
+			margin-top: 400px;
+			margin-left: 60%;
+		}
+		
+		#rotate{
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		
+		body#bowl.pack{
+			overflow-y: visible;
+		}
+		
+		#mySpriteSpin img{
+			position: relative;
+			z-index: 10;
+		}
+			#mySpriteSpin .spritespin-stage img:first-child, #mySpriteSpin .spritespin-stage img:nth-child(2), #mySpriteSpin .spritespin-stage img:nth-child(3), #mySpriteSpin .spritespin-stage img:nth-child(4){
+				z-index: 8;
+			}
+		body#bowl.pack .container ul{
+			margin-top: 175px;
+		}
+			body#bowl.pack footer .container ul{
+				margin: 0;
+			}
+			body#bowl.pack footer .container div img.instagram{
+				cursor: pointer !important;
+				width: 50% !important;
+			}
+	
+	body#conoce-nutrique.nutricion .page1, body#conoce-nutrique .page1{
+		background-image: none;
+		overflow: hidden;
+		height: auto !important;
+	}
+	body#conoce-nutrique.nutricion .column img{
+		width: 200%;
+		max-width: unset;
+	}
+		body#conoce-nutrique.nutricion .conoce-perro, body#conoce-nutrique.nutricion .conoce-gato{
+			margin-top: 90px;
+		}
+		body#conoce-nutrique.nutricion .conoce-perro{
+			margin-left: -220px;
+		}
+		body#conoce-nutrique.nutricion .conoce-gato{
+			margin-right: -130px;
+		}
+	
+	body#conoce-nutrique.nutricion .column h3{
+		font-size: 20px;
+		margin: 10px 0;
+	}
+	
+	body#conoce-nutrique.nutricion .column h2{
+		font-family: 'Bebas Neue';
+		font-size: 24px;
+	}
+		body#conoce-nutrique.nutricion .column h2 a{
+			display: inline-block;
+			color: #212529;
+			text-decoration: none;
+			animation-name: boton;
+			animation-duration: 4000ms;
+			animation-iteration-count: infinite;
+		}
+		body#conoce-nutrique.nutricion .column h2 img.linea{
+			width: 15px;
+			margin-top: 20px;
+		}
+	body#conoce-nutrique.nutricion .column h3 img.linea{
+		width: auto;
+		margin: 0;
+	}
+	
+	body#product .page1{
+		background-image: url(../images/producto/header-back.jpg);
+		background-position: bottom center;
+		background-size: 100%;
+		background-repeat: no-repeat;
+	}
+	
+	body#product .page2{
+		background-image: none;
+	}
+	body#product #section1{
+		min-height: inherit;
+	}
+		body#product.productos #section1{
+			padding: 0;
+		}
+	body#product .backImages{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		text-align: center;
+		overflow: hidden;
+	}
+		body#product .backImages img{
+			height: 100%;
+			top: 0;
+		}
+			body#product .backImages img:first-child{
+				float: left;
+				margin-left: -25px;
+			}
+			body#product .backImages img:last-child{
+				float: right;
+				margin-right: -25px;
+			}
+	
+	body#product #bannerProductos{
+		float: none;
+	}
+	body#product .productos{
+		margin-top: 20px;
+	}
+		body#product .productos .producto a{
+			display: inline-block;
+		}
+		
+		body#product .page1 .productos .producto.first{
+			margin: 0 -50px;
+		}
+		body#product .page1 .productos .producto.last{
+			margin: 0 -60px;
+		}
+	
+	body#product .productImage{
+		float: left;
+		margin-top: 25px;
+	}
+		body#product .presentaciones{
+			text-align: center;
+		}
+		body#product .productImage h3{
+			display: inline-block;
+			font-family: 'Bebas Neue';
+			font-size: 18px;
+			/*margin-left: 20px;*/
+		}
+		body#product .productImage img{
+			display: inline-block;
+			width: auto;
+		}
+			body#product .productImage img.productImageP{
+				padding: 0;
+			}
+		img.presentaciones{
+			max-width: 50px;
+		}
+		.presentaciones img{
+			max-width: 50px;
+		}
+		
+	body#product .productInfo{
+		float: left;
+		font-family: 'Bebas Neue';
+		text-align: center;
+		margin-top: 25px;
+		padding: 0;
+	}
+		body#product .productInfo h1{
+			font-size: 30px;
+			color: #231f20;
+			margin: 0;
+		}
+		body#product .productInfo h3, body#product .productInfo p{
+			font-size: 16px;
+			color: #231f20;
+			margin: 0;
+		}
+		
+	body#product .productProteins div{
+		float: left;
+		border-right: 1px solid #000;
+	}
+		body#product .productProteins div.last{
+			border: 0;
+		}
+		body#product .productProteins div span{
+			display: inline-block;
+            padding: 5px 10px;
+            font-size: 40px;
+            line-height: 40px;
+            font-weight: 600;
+            color: #fff;
+            letter-spacing: -2px;
+            margin-bottom: 5px;
+		}
+			body#product .productProteins div span.naranja{
+				background-color: #e9540d;
+			}
+			body#product .productProteins div span.verde{
+				background-color: #00963e;
+			}
+			body#product .productProteins div span.bordo{
+				background-color: #9d182f;
+			}
+			body#product .productProteins div span.azul{
+				background-color: #174285;
+			}
+			body#product .productProteins div span.verdeOscuro{
+				background-color: #13322b;
+			}
+		body#product .productProteins div p{
+			font-size: 15px;
+			color: #231f20;
+			line-height: 18px;
+		}
+		body#product .productProteins div strong{
+			font-size: 22px;
+			line-height: 22px;
+		}
+			body#product .productProteins div strong.naranja{
+				color: #e9540d;
+			}
+			body#product .productProteins div strong.verde{
+				color: #00963e;
+			}
+			body#product .productProteins div strong.bordo{
+				color: #9d182f;
+			}
+			body#product .productProteins div strong.azul{
+				color: #174285;
+			}
+			body#product .productProteins div strong.verdeOscuro{
+				color: #13322b;
+			}
+		body#product .productProteins div img{
+			width: 100%;
+			margin-top: 10px;
+		}
+		
+	body#product .productLinks a{
+		display: inline-block;
+		font-size: 18px;
+		color: #231f20;
+		text-decoration: none;
+		line-height: 18px;
+		cursor: pointer;
+	}
+		body#product .productLinks a span{
+			display: inline-block;
+			animation-name: boton;
+			animation-duration: 4000ms;
+			animation-iteration-count: infinite;
+		}
+			body#product .productLinks a:nth-child(2) span{animation-delay: 200ms;}
+			body#product .productLinks a:nth-child(3) span{animation-delay: 400ms;}
+			body#product .productLinks a:nth-child(4) span{animation-delay: 600ms;}
+			@keyframes boton{
+				0%{
+					transform: scale(1);
+				}
+				15%{
+					transform: scale(1.1);
+				}
+				30%{
+					transform: scale(1);
+				}
+			}
+		
+		body#product .productLinks a img{
+			width: 100%;
+		}
+			body#product img.vitality{
+				width: 60% !important;
+			}
+			body#product img.proactive{
+				width: 80% !important;
+			}
+		body#product .productLinks a:last-child{
+			margin-bottom: 0;
+		}
+	body#product .productPopUp{
+		position: absolute;
+		background-color: #FFF;
+		top: 25px;
+		left: 0;
+	}
+		body#product .productPopUp .pupUpItem{
+		    display: inline-block;
+		}
+		body#product .productPopUp .close img{
+			float: right;
+			width: 30px;
+			cursor: pointer;
+		}
+		body#product .productPopUp p{
+			float: left;
+			width: 100%;
+			margin: 10px 0;
+		}
+		body#product .productPopUp img, body#product .productPopUp span{
+			float: left;
+		}
+		body#product .productPopUp span{
+			text-align: left;
+			font-size: 11px;
+			line-height: 11px;
+		}
+		body#product .productPopUp .pupUpItem img{
+			width: 100%;
+		}
+		
+		body#product .productPopUp .pupUpItem h3{
+			float: left;
+			width: 100%;
+			font-size: 20px;
+		}
+		body#product .productPopUp .pupUpItem p{
+			float: left;
+			width: 100%;
+			font-size: 13px;
+		}
+		
+	body#product.productos .page2 .productos .producto{
+		float: left;
+		margin: 25px 0;
+		vertical-align: top;
+	}
+		body#product.productos .page2 .productos .producto p {
+			font-family: 'Bebas Neue';
+			font-size: 20px;
+			color: #000000;
+		}
+			body#product.productos .page2 .productos .producto a{
+				transition: all 500ms;
+				text-decoration: none;
+			}
+				body#product.productos .page2 .productos .producto a:hover{
+					transform: scale(1.1);
+				}
+			body#product.productos .page2 .productos .producto a img{
+				max-width: 100%;
+			}
+	
+	body#contacto .page1{
+		background-image: none;
+	}
+	body#contacto .submitimage {
+		width: auto!important;
+		border: none!important;
+		padding: 0!important;
+		margin-top: 13px;
+	}
+
+	body#contacto div{
+		float: left;
+	}
+		body#contacto footer div.container{
+			float: none;
+		}
+	body#contacto .contacto{
+		margin-top: 50px;
+	}
+	#dondecomprar section.search {
+		
+		margin-bottom: 50px;
+		width: 100%;
+		float: left;
+	}
+	#dondecomprar header{
+		background-color: rgba(255, 255, 255, 0.95);
+		padding-top: 10px;
+		padding-bottom: 10px;
+		margin: 0;
+	}
+	body#dondecomprar .contacto{
+		margin-top: 50px;
+	}
+	
+	body#dondecomprar  .page_container{width:100%}
+	
+	body#contacto h1, body#contacto h2{
+		float: left;
+		font-family: 'Bebas Neue';
+		color: #252525;
+		margin: 0;
+	}
+	body#contacto p{
+		float: left;
+		font-size: 13px;
+		margin-top: 0;
+	}
+	
+	body#contacto .form-field{
+		float: left;
+		margin: 5px 0;
+	}
+		body#contacto .form-field div{
+			float: left;
+			padding-left: 0;
+		}
+		body#contacto .form-field input, body#contacto .form-field textarea, body#contacto .form-field select{
+			width: 100%;
+			padding: 5px 10px;
+			font-size: 13px;
+			border: 1px solid #cccccc;
+			border-radius: 2px;
+			color: #252525;
+		}
+			body#contacto .form-field textarea{
+				min-height: 100px;
+			}
+			body#contacto .form-field a{
+				display: inline-block;
+				transition: all 300ms;
+			}
+				body#contacto .form-field a:hover{
+					transform: scale(1.1);
+				}
+		body#contacto p a{
+			color: #252525;
+		}
+		body#contacto p img{
+			width: 20px;
+			margin-right: 5px;
+		}
+	body#contacto .fondo{
+		margin-top: 150px;
+		text-align: center;
+	}
+		body#contacto .fondo img{
+			transform: translate(200px, 500px) scale(0.1);
+			filter: blur(10px);
+			transition-delay: 1000ms;
+			transition: all 1000ms;
+		}
+		body#contacto .fondo img:last-child{
+			transform: translate(-200px, 500px) scale(0.1);
+		}
+		body#contacto .fondo img.firstAnimation{
+			transform: translate(0) scale(0.8);
+			filter: blur(0);
+		}
+		
+	body#conoce-nutrique .page1{
+		background-image: url(../productos/images/producto/header-back.jpg);
+		background-size: 100%;
+		background-position: bottom center;
+		padding: 50px 0;
+	}
+		body#conoce-nutrique .column{
+			float: left;
+		}
+		body#conoce-nutrique .columnCenter{
+			margin-top: 50px;
+		}
+			body#conoce-nutrique .column img{
+				max-width: 100%;
+			}
+		body#conoce-nutrique h1{
+			font-family: 'Bebas Neue';
+			font-size: 50px;
+			color: #252525;
+		}
+			body#conoce-nutrique .column img.linea{
+				width: 70%;
+				margin-top: 5px;
+			}
+			body#conoce-nutrique .page1 .info p{
+				width: 80%;
+				font-size: 14px;
+				line-height: 18px;
+				color: #252525;
+			}
+			body#conoce-nutrique .column a img{
+				cursor: pointer;
+				transition: all 400ms;
+			}
+				body#conoce-nutrique .column a:hover img{
+					transform: scale(1.1);
+				}
+			
+	body#conoce-nutrique .conoce-perro{
+		margin-top: 120px;
+	}
+	body#conoce-nutrique .conoce-gato{
+		margin-top: 120px;
+	}
+
+	
+	
+	body#dondecomprar .form-field input, body#dondecomprar .form-field textarea, body#dondecomprar .form-field select{
+		width: 100%;
+		padding: 5px 10px;
+		font-size: 13px;
+		border: 1px solid #cccccc;
+		border-radius: 2px;
+		color: #252525;
+		height:45px;
+	}
+	
+	
+	
+	
+	
+	@media only screen and (max-width: 767px) {
+	    body#ingredientes .page1 .info span .linea:last-child{
+	        display: none;
+	    }
+	    #bannersBowls .verdurasLeft, #bannersBowls .verdurasRight{
+		    display: none;
+		}
+		body#product footer {
+		    margin-top: 25px;
+		}
+		body{
+		    overflow-x: hidden;
+		}
+		.page3 .productos .producto{
+		    float: left;
+		}
+		body#product .productPopUp{
+			/*height: 100%;*/
+			padding: 10px;
+			
+			position: relative;
+            background-color: #FFF;
+            margin-top: -120%;
+            z-index: 20;
+            float: left;
+            width: 100%;
+		}
+		    
+		header{
+			background-color: rgba(255, 255, 255, 0.95);
+			padding-top: 10px;
+			padding-bottom: 10px;
+			margin: 0;
+		}
+		body#ingredientes .page_container{
+			padding: 0 15px;
+		}
+			body#ingredientes .ingredientes .titulo{
+				padding: 0;
+			}
+				body#ingredientes .ingredientes .ingrediente a img.lines{
+					display: none;
+				}
+		.page1{
+			background-size: auto 100%;
+			background-position: 200px;
+		}
+		body#ultra-premium #section0{
+		    height: auto !important;
+		}
+		.fp-controlArrow{
+			opacity: 0;
+		}
+		.page1 .fp-scroller{
+			overflow: scroll !important;
+			height: 100% !important;
+		}
+		.page1 .info{
+			margin-top: 50px;
+		}
+		.page1 .info h1{
+			font-size: 30px;
+			line-height: 30px;
+		}
+			body#ultra-premium .page1 .info h1{
+				font-size: 25px;
+				line-height: 25px;
+			}
+		.page1 .info p{
+			width: 100%;
+		}
+			body#ultra-premium .page1 .info p{
+				font-size: 13px;
+				line-height: 13px;
+				margin: 0;
+			}
+		.page1 .info .btns a{
+			width: 160px;
+		}
+
+		header #menu h3{
+			width: 90%;
+			margin: 20px 5%;
+		}
+		
+		.verduras{
+			margin-top: -350px;
+		}
+			.verduras .calabaza {
+				margin-top: 310px;
+				margin-left: -50px;
+			}
+			.verduras .manzanilla {
+				margin-top: 400px;
+				margin-left: -40px;
+				max-width: 40% !important;
+			}
+			.verduras .chia {
+				margin-top: 405px;
+				margin-left: -20px;
+				max-width: 60% !important;
+			}
+			.verduras .ginger {
+				margin-top: 360px;
+				margin-left: 0px;
+				max-width: 90% !important;
+			}
+			.verduras .huevo {
+				margin-top: 440px;
+				margin-left: -40px;
+				max-width: 70%;
+			}
+			.verduras .gato {
+				margin-top: 525px;
+				margin-left: -40px;
+				max-width: 50% !important;
+			}
+			
+			.verduras .pavo {
+				margin-top: 370px;
+				margin-left: 90px;
+			}
+			
+			.verduras .hinojo {
+				margin-top: 320px;
+				margin-left: 30px;
+				max-width: 60% !important;
+			}
+			.verduras .coco {
+				margin-top: 400px;
+				margin-left: -20px;
+				max-width: 70% !important;
+			}
+			.verduras .aceite {
+				margin-top: 390px;
+				margin-left: 80px;
+				max-width: 30% !important;
+			}
+			.verduras .recipiente {
+				margin-top: 410px;
+				margin-left: -10px;
+				max-width: 100% !important;
+			}
+			.verduras .menta {
+				margin-top: 445px;
+				margin-left: 40px;
+				max-width: 40% !important;
+			}
+			.verduras .arandanos-rojos {
+				margin-top: 450px;
+				margin-left: -20px;
+				max-width: 40% !important;
+			}
+			.verduras .blueberry {
+				margin-top: 480px;
+				margin-left: 0px;
+				max-width: 60% !important;
+			}
+			.verduras .perro {
+				margin-top: 520px;
+				margin-left: 0px;
+				max-width: 100% !important;
+			}
+			
+			.verduras .verdura{
+				max-width: 120%;
+			}
+			.verduras .bowl-01{
+				margin-top: 370px;
+				margin-left: -50px;
+			}
+			.verduras .bowl-02{
+				margin-top: 370px;
+				margin-left: -20px;
+			}
+			.verduras .perro-02 {
+				margin-top: 280px;
+				margin-left: -40px;
+				max-width: 100% !important;
+			}
+			.verduras .gato-02 {
+				margin-top: 280px;
+				margin-left: 200px;
+				max-width: 110% !important;
+			}
+			header #ig img{
+				width: 50%;
+			}
+			/*.page2{
+				background-size: 300%;
+			}
+				.verduras2Left, .verduras2Right{
+					display: none;
+				}
+				.verduras2Center{
+					margin-left: 0;
+				}
+				.page2 .verduras2 .verduras2Center {
+					display: inline-block;
+					margin-top: 0px;
+					margin-left: 30px;
+				}*/
+		.page2 {
+			background-size: 200%;
+		}
+		body#index .page2 .info{
+			margin-top: 25px;
+		}
+		body#index .page2 h2{
+			font-size: 28px;
+			line-height: 30px;
+			width: 200%;
+			margin-left: -50%;
+		}
+			body#index .page2 h2 br{
+				display: none;
+			}
+			#section1 .column a{
+				padding: 0;
+			}
+		#section1 .column img.ultraLeft, #section1 .column img.ultraRight{
+			/*position: absolute;*/
+			max-width: 150%;
+			margin-top: 200px;
+		}
+		
+		body#bowl{
+			overflow: visible;
+		}
+		body#bowl .container img.titleRibbon{display: none;}
+		body#bowl .container ul#lista-ingredientes{margin:0;text-align:center;margin-top: 120px;}
+			body#bowl.para-gatos .container ul#lista-ingredientes{margin-top: 130px;}
+		body#bowl .container ul#lista-ingredientes li{
+			float: left;
+			width: 50%;
+		}
+		body#bowl .container #selectedInfo{
+			position: relative;
+			padding: 0;
+			margin-top: -445px;
+			text-align: center;
+		}
+			body#bowl.para-gatos .container #selectedInfo{
+				margin-top: -425px;
+			}
+			body#bowl .container #selectedInfo h3{/*line-height: 60px;*/}
+			body#bowl .container #selectedInfo p{margin: 10px 0;text-align: center;line-height: 15px;padding: 0;}
+			
+			    body#bowl .container #selectedInfo .selected-13 p{
+			        font-size: 9px;
+			        line-height: 10px;
+			    }
+			
+			body#bowl .container ul#lista-ingredientes li a{font-size: 16px;margin: 5px;line-height: 16px;}
+			body#bowl .container ul#lista-ingredientes li a:hover{
+				background-color: transparent;
+				color: #000000;
+			}
+		body#ingredientes .page1 .info{
+		    margin-top: 50px;
+		}
+		body#ingredientes .ingredientes-back{
+			width: auto;
+			height: 100%;
+			opacity: 0.6;
+		}
+		body#ingredientes .ingredientes .ingrediente a strong{
+		    height: auto;
+		    padding: 30px 5px;
+		    font-size: 10px;
+            margin-top: -25px;
+            background-color: #fff;
+		}
+		    body#ingredientes .ingredientes .ingrediente{
+		        margin: 20px 0;
+		        height: 150px;
+		    }
+		    
+		#mouse-pointer{
+			display: none !important;
+		}
+				body#bowl .container .dots .dot.pavo{
+					display: block;
+					margin-top: 80px;
+					margin-left: 140px;
+				}
+				body#bowl .container .dots .dot.cerdo{
+					margin-top: 70px;
+					margin-left: 70px;
+				}
+				body#bowl .container .dots .dot.huevo{
+					margin-top: 100px;
+					margin-left: 180px;
+				}
+				body#bowl .container .dots .dot.blueberries{
+					margin-top: 150px;
+					margin-left: 60px;
+				}
+				body#bowl .container .dots .dot.te-verde{
+					margin-top: 190px;
+					margin-left: 40px;
+				}
+				body#bowl .container .dots .dot.zapallo{
+					margin-top: 200px;
+					margin-left: 100px;
+				}
+				body#bowl .container .dots .dot.hinojo{
+					margin-top: 165px;
+					margin-left: 175px;
+				}
+				body#bowl .container .dots .dot.manzanilla{
+					margin-top: 145px;
+					margin-left: 185px;
+				}
+				body#bowl .container .dots .dot.jengibre{
+					margin-top: 150px;
+					margin-left: 215px;
+				}
+				body#bowl .container .dots .dot.arroz{
+					margin-top: 175px;
+					margin-left: 150px;
+				}
+				body#bowl .container .dots .dot.menta{
+					margin-top: 190px;
+					margin-left: 140px;
+				}
+				body#bowl .container .dots .dot.extracto{
+					margin-top: 110px;
+					margin-left: 130px;
+				}
+				body#bowl .container .dots .dot.aceites{
+					margin-top: 210px;
+					margin-left: 180px;
+				}
+				
+				/* PARA GATOS */
+				
+				body#bowl.para-gatos .container .dots .dot.pavo{
+					display: block;
+					margin-top: 160px;
+					margin-left: 210px;
+				}
+				body#bowl.para-gatos .container .dots .dot.cerdo {
+					margin-top: 70px;
+					margin-left: 160px;
+				}
+				body#bowl.para-gatos .container .dots .dot.zapallo {
+					margin-top: 100px;
+					margin-left: 90px;
+				}
+				body#bowl.para-gatos .container .dots .dot.blueberries {
+					margin-top: 180px;
+					margin-left: 80px;
+				}
+				body#bowl.para-gatos .container .dots .dot.menta {
+					margin-top: 185px;
+					margin-left: 50px;
+				}
+				body#bowl.para-gatos .container .dots .dot.cranberries {
+					margin-top: 230px;
+					margin-left: 60px;
+				}
+				body#bowl.para-gatos .container .dots .dot.psyillium {
+					margin-top: 210px;
+					margin-left: 95px;
+				}
+				body#bowl.para-gatos .container .dots .dot.huevo {
+					margin-top: 120px;
+					margin-left: 220px;
+				}
+				body#bowl.para-gatos .container .dots .dot.tomate {
+					margin-top: 270px;
+					margin-left: 135px;
+				}
+				body#bowl.para-gatos .container .dots .dot.coco {
+					margin-top: 260px;
+					margin-left: 180px;
+				}
+				body#bowl.para-gatos .container .dots .dot.extracto {
+					margin-top: 160px;
+					margin-left: 180px;
+				}
+				body#bowl.para-gatos .container .dots .dot.jengibre {
+					margin-top: 220px;
+					margin-left: 230px;
+				}
+				
+			/*body#bowl .fp-tableCell, body#bowl .fp-scrollable{
+				height: 2200px !important;
+				overflow: visible;
+			}*/
+			body#bowl .page1{
+				display: inline-block;
+				padding-bottom: 100px;
+			}
+			.ingredientes .titulo p{
+				font-size: 21px;
+			}
+			.ingredientes .ingrediente a span{
+				font-size: 25px;
+    			line-height: 30px;
+			}
+		body#bowl.pack .container .info:first-child{
+			margin-top: 75px;
+		}
+			body#bowl.pack .ingredientes{
+				margin-top: 50px;
+			}
+			body#bowl.pack .container .info:nth-child(3){
+				margin-top: 0;
+			}
+			body#bowl.pack .container ul{
+				margin-top: 0;
+			}
+			.ingredientes{
+				margin-top: 0;
+			}
+			.pupUpItem.ingredientes, .pupUpItem.porcion{
+			    padding: 15% 10px;
+			}
+		body#bowl .page1{
+			background-image: none;
+			height: auto !important;
+		}
+			body#bowl .nutricionTitle{
+				width: 90%;
+				font-size: 30px;
+			}
+			body#bowl .page1 .info{
+				margin-top: 100px;
+			}
+			body#bowl .container .ingredientes {
+				margin-top: 0;
+			}
+			body#bowl .container .ingredientes img.bowl-ingredientes{
+				margin: 0;
+			}
+		body#index{
+			float: left;
+			width: 100%;
+			overflow-x: hidden;
+		}
+		#section1{
+			min-height: 600px;
+		}
+		.verduras .premiumBack{
+			margin-top: 300px;
+		}
+		.page1 .producto{
+			margin: 0 -30px;
+		}
+		.slick-dots{
+			margin-top: 135px;
+		}
+		body#ultra-premium .single-item, body#ultra-premium .leftColumnUltra{
+			position: relative;
+			width: 100%;
+			height: 45%;
+		}
+		body#ultra-premium .single-item{
+			position: relative;
+			top: 0;
+			height: auto !important;
+			/*top: 45%;*/
+		}
+		body#ultra-premium .single-item .item h3{
+			font-size: 200px;
+		}
+		body#ultra-premium .single-item .icons{
+			margin-top: 50px;
+		}
+			body#ultra-premium .info{
+				width: 80%;
+				margin: 0 10%;
+				margin-top: 20%;
+			}
+				body#ultra-premium .info h3{
+					font-size: 23px;
+				}
+				.page1 .info p{
+					font-size: 16px;
+				}
+				body#ultra-premium .info .corona{
+					margin: 5px;
+				}
+				body#ultra-premium .info .corona{
+					font-size: 200px;
+				}
+				body#ultra-premium .single-item .item p{
+					width: 80%;
+					margin: 0 10%;
+					font-size: 25px;
+					margin-top: 70px;
+				}
+				body#ultra-premium .single-item .icons p{
+					font-size: 15px;
+					margin: 0;
+					line-height: 15px;
+				}
+				body#ultra-premium .single-item .icons img{
+					width: 20px;
+					margin: 0 25px;
+				}
+				body#ultra-premium .tabla{
+					max-width: 100%;
+				}
+		.backImages img{
+			width: 30%;
+			height: auto !important;
+			margin-top: 100px;
+		}
+		body#product .productImage{
+		    margin-top: 150px;
+		}
+			body#product .productInfo{
+				margin-top: 25px;
+				padding: 50px 0;
+				padding-bottom: 0;
+			}
+			body#product .productName, body#product .productProteins, body#product .productLinks{
+				opacity: 1 !important;
+				display: block !important;
+			}
+		body#product .productos{
+			margin-top: 35px;
+		}
+			body#product .hidden-xs{
+				display: none;
+			}
+			body#product #section1{
+				padding: 0;
+				margin-top: -100px;
+			}
+		
+		body#ultra-premium table{
+			width: 96%;
+			margin: 50px 2%;
+			margin-top: 10px;
+		}
+		body#ultra-premium table tr td{
+			padding: 3px 0;
+		}
+		body#ultra-premium table tr td:first-child{
+			font-size: 20px;
+			line-height: 20px;
+		}
+		body#ultra-premium table tr td:nth-child(2){
+			font-size: 9px;
+			line-height: 9px;
+		}
+		body#ultra-premium table tr:first-child td:nth-child(3), body#ultra-premium table tr:first-child td:nth-child(4){
+			font-size: 11px;
+            line-height: 12px;
+            padding: 5px 20px;
+		}
+		body#ultra-premium table tr img{
+			width: 10px;
+		}
+		body#ultra-premium .slick-dots{
+			transform: rotate(90deg) scale(0.6);
+			bottom: 25%;
+		}
+		body#product .page1{
+			/*height: auto !important;
+			background-size: 150%;*/
+			background-size: auto 100%;
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+		body#contacto .fondo{
+			display: none;
+		}
+		body#contacto form{
+			position: relative;
+			z-index: 2;
+		}
+		body#dondecomprar .contacto {
+			margin-top: 120px;
+		}
+		
+		
+		body#contacto .contacto {
+			margin-top: 120px;
+		}
+		body#contacto h2{
+			font-size: 30px;
+		}
+		body#conoce-nutrique .page1{
+			background-size: auto 100%;
+			padding: 50px 0;
+		}
+		body#conoce-nutrique .columnConoce{
+			position: absolute;
+			opacity: 0.5;
+			bottom: -30px;
+		}
+			body#conoce-nutrique .columnConoce:nth-child(3){
+				right: 0;
+			}
+		body#conoce-nutrique .page1 .info{
+			margin-top: 0;
+		}
+			body#conoce-nutrique h1{
+				font-size: 40px;
+			}
+			body#conoce-nutrique .page1 .info p{
+				font-size: 13px;
+				line-height: 16px;
+			}
+			
+	body#conoce-nutrique.nutricion .page1{
+		overflow-y: visible;
+	}
+		body#conoce-nutrique.nutricion h1{
+			font-size: 30px;
+		}
+		
+		body#bowl.pack .container .dots .dot.puntas{
+			margin-top: 0px;
+			margin-left: 70%;
+		}
+		body#bowl.pack .container .dots .dot.valvulas{
+			margin-top: 120px;
+			margin-left: 68%;
+		}
+		body#bowl.pack .container .dots .dot.manija{
+			margin-top: 220px;
+			margin-left: 68%;
+		}
+		body#bowl.pack .container .dots .dot.estructura{
+			margin-top: 400px;
+			margin-left: 64%;
+		}
+		body#bowl.pack .container .ingredientes{
+			margin-top: 0;
+		}
+		body#bowl.pack .container h1{
+			width: 100%;
+		}
+		body#bowl.pack .container #selectedInfo{
+			margin-top: 0;
+		}
+		body#product.productos .page2 .productos{
+			margin-top: 100px;
+		}
+		
+		body#conoce-nutrique.nutricion .column h2 a{
+			visibility: visible !important;
+		}
+			body#conoce-nutrique.nutricion .column h2 a img{
+				display: none;
+			}
+		footer .container div:first-child{
+			padding: 0;
+		}
+		footer .container ul{
+			text-align: center;
+		}
+		footer .container div:last-child{
+			text-align: center;
+		}
+			footer .container div:last-child a{
+				display: inline-block;
+			}
+		header #menu #logo-menu{
+			text-align: center;
+		}
+			header #menu #logo-menu img{
+				width: 50%;
+			}
+			
+		body#bowl.pack .container div #tressesenta{
+			margin-top: -20px;
+			z-index: 99;
+		}
+		
+		body#conoce-nutrique.nutricion .conoce-perro{
+		    margin-left: -240px;
+		}
+		body#conoce-nutrique.nutricion .conoce-gato {
+            margin-left: 100px;
+        }
+	}
+	
+	
+		body#dondecomprar .page1{
+		background-image: none;
+	}
+	body#dondecomprar .submitimage {
+		width: auto!important;
+		border: none!important;
+		padding: 0!important;
+		margin-top: 13px;
+	}
+
+	body#dondecomprar div{
+		float: left;
+	}
+		body#dondecomprar footer div.container{
+			float: none;
+		}
+	body#dondecomprar .dondecomprar{
+		margin-top: 50px;
+	}
+	body#dondecomprar h1, body#dondecomprar h2{
+		    width: 100%;
+			float: left;
+			font-family: 'Bebas Neue';
+			color: #252525;
+			margin: 0;
+			text-align: center;
+			margin: 0 auto;
+			margin-bottom:50px;
+			z-index:1000;
+
+	}
+	body#dondecomprar p{
+		float: left;
+		font-size: 13px;
+		margin-top: 0;
+	}
+	
+	body#dondecomprar .form-field{
+		float: left;
+		margin: 5px 0;
+	}
+		body#dondecomprar .form-field div{
+			float: left;
+			padding-left: 0;
+		}
+		body#dondecomprar .form-field input, body#dondecomprar .form-field textarea, body#dondecomprar .form-field select{
+			width: 100%;
+			padding: 5px 10px;
+			font-size: 13px;
+			border: 1px solid #cccccc;
+			border-radius: 2px;
+			color: #252525;
+		}
+			body#dondecomprar .form-field textarea{
+				min-height: 100px;
+			}
+			body#dondecomprar .form-field a{
+				display: inline-block;
+				transition: all 300ms;
+			}
+				body#dondecomprar .form-field a:hover{
+					transform: scale(1.1);
+				}
+		body#dondecomprar p a{
+			color: #252525;
+		}
+		body#dondecomprar p img{
+			width: 20px;
+			margin-right: 5px;
+		}
+	body#dondecomprar .fondo{
+		margin-top: 150px;
+		text-align: center;
+	}
+		body#dondecomprar .fondo img{
+			transform: translate(200px, 500px) scale(0.1);
+			filter: blur(10px);
+			transition-delay: 1000ms;
+			transition: all 1000ms;
+		}
+		body#dondecomprar .fondo img:last-child{
+			transform: translate(-200px, 500px) scale(0.1);
+		}
+		body#dondecomprar .fondo img.firstAnimation{
+			transform: translate(0) scale(0.8);
+			filter: blur(0);
+		}
+		
+		body#dondecomprar .dondecomprar {
+			margin-top: 120px;
+		}
+		body#dondecomprar h2{
+			font-size: 30px;
+		}
+		
+		/* ------- -- STORE LOCATOR -- ------- */
+			#dondecomprar .store {
+			  background: #fcfcfc;
+			}
+			.principales#dondecomprar .store main > .wrapper {
+			  display: table;
+			}
+			#dondecomprar .store h1.titulo {
+				font-size: 3.3em;
+				line-height: 1.1;
+				margin: 0;
+				letter-spacing: -1.1px;
+				padding-top: 30px;
+				margin-bottom: 40px;
+				position: relative;
+			}
+			#dondecomprar .store h1.titulo:before {
+			  display: none;
+				/*content: "";
+				display: block; 
+				width: 47px;
+				height: 75px;
+				position: absolute;
+				left: -60px;
+				top: 0;
+				background: url(../images/wp/bk-titulo.png) no-repeat center center / 100% 100%;*/
+			}
+			#dondecomprar .store .search-content.calle {
+			  width: calc(70% - 20px);
+			  float: left;
+			}
+			#dondecomprar .store .search-content.postal {
+			  width: 30%;
+			  float: right;
+			}
+			#dondecomprar .store .search-content {
+			  position: relative;
+			  border: 1px solid #cccccc;
+			  border-radius: 4px;
+			  height: 56px;
+			  display: table;
+			  width: 100%;
+			  margin-bottom: 20px;
+			  overflow: hidden;
+			  float: left;
+			}
+			#dondecomprar .store .search-content:focus {
+			  border: 1px solid black /*#5c3fb8*/;
+			}
+	
+			#dondecomprar .store  button {
+				width: calc(100vw * 56 / 1366);
+				height: calc(100vw * 56 / 1366);
+				font-size: calc(100vw * 20 / 1366);
+			}
+			#dondecomprar .store .search button {
+			  width: 45px;
+			  height: 45px;
+			  padding: 0;
+			  margin: 0;
+			  color: black /*#5c3fb8*/;
+			  font-size: 1em;
+			  font-weight: 600;
+			  border: none;
+			  cursor: pointer;
+			  position: absolute;
+			  right: 0;
+			  top: 0;
+			  z-index: 2;
+			  display: block;
+			  background: #ededed;
+			}
+			#dondecomprar .store .check-content {margin-top:50px;margin-bottom:50px}
+			#dondecomprar .store .check-content > h3 {
+			    float: left;
+				font-size: 1.3em;
+				font-weight: normal;
+				line-height: 1.4;
+				padding-top: 15px;
+				margin-top: 30px;
+			}
+			#dondecomprar .store .check-content > div.checkbox {
+			  float: left;
+			  padding-left: 20px;
+			}
+			#dondecomprar .store .check-content label {
+				display: inline-block;
+				position: relative;
+				cursor: pointer;
+				font-size: 1.3em;
+				line-height: 22px;
+				font-weight: 600;
+				-webkit-user-select: none;
+				-moz-user-select: none;
+				-ms-user-select: none;
+				user-select: none;
+				margin: 0;
+				padding: 0;
+				width: 90px;
+				height: 90px;  
+				margin-right: 10px;  
+			}
+			#dondecomprar .store .check-content label:last-child {
+				margin-right: 0;
+			}
+			#dondecomprar .store .check-content label input {
+				position: absolute;
+				opacity: 0;
+				cursor: pointer;
+				padding: 0;
+				height: 100%;
+			}
+			#dondecomprar .store .check-content label .checkmark {
+				position: absolute;
+				top: 0;
+				left: 0;
+				height: 90px;
+				width: 90px;
+				border-radius: 12px;
+				text-align: center;
+				padding-top: 14px;    
+			}
+			#dondecomprar .store .check-content label .checkmark img {
+			  width: 40px;
+			  height: auto;
+			}
+			#dondecomprar .store .check-content label:last-child .checkmark img {
+			  width: 78px;
+			}
+			#dondecomprar .store .check-content label input:checked ~ .checkmark .svg {
+			  filter: invert(1);
+			}
+			#dondecomprar .store .check-content label .checkmark p {
+			    font-size: 0.6em;
+				font-weight: normal;
+				line-height: 1.4;
+				color: #000;
+				margin-top: 4px;
+				text-align: center;
+				width: 100%;
+			}
+			/* On mouse-over, add a grey background color */
+			#dondecomprar .store .check-content label:hover input ~ .checkmark {
+			  background-color: transparent;
+			}
+			/* When the checkbox is checked, add a blue background */
+			#dondecomprar .store .check-content label input:checked ~ .checkmark {
+			  background-color: black /*#5c3fb8*/;
+			  -webkit-box-shadow: inset -3px -3px 3px 0px rgba(0,0,0,0.1);
+			  -moz-box-shadow: inset -3px -3px 3px 0px rgba(0,0,0,0.1);
+			  box-shadow: inset -3px -3px 3px 0px rgba(0,0,0,0.1);}
+			#dondecomprar .store .check-content label input:checked ~ .checkmark p {
+				color: #FFF;
+			}
+			/* Show the checkmark when checked */
+			#dondecomprar .store .check-content label input:checked ~ .checkmark:after {
+				display: block;
+			}
+			.arrow-link {
+			  width: 24px;
+			  height: 15px;
+			  display: block;
+			  margin: 0 auto;
+			  background: url(../images/arrow-down-blue.png) no-repeat center center / 100% auto;
+			}
+			/* -- MAPA -- */
+			#dondecomprar .store section.map {
+			  position: relative;
+			}
+			
+			#dondecomprar   .wrapper{
+			  width:100%!important;
+			}
+			
+			/* Tabs Menu */
+			#dondecomprar .store section.map .tabs-menu {
+			  display: none;
+			}
+			/* Tabs */
+			#dondecomprar .store section.map #listado.tabs {
+			  float: left;
+			  width: 480px;
+			}
+			#dondecomprar .store section.map #mapa.tabs {
+			  float: right;
+			  width: calc(100% - 480px);
+			  position: relative;
+			  height: 580px;
+			}
+				
+			#dondecomprar .store section.map #mapa.tabs .mapa {
+			  width: 100%;
+			  height: 100%;
+			}
+			#dondecomprar .store section.map #mapa.tabs .mapa #map {
+			  height: 580px;
+			  width:100%;
+			}
+			#dondecomprar  .store section.map .info h3 {
+				font-size: calc(100vw * 20 / 1366);
+				padding-bottom: calc(100vw * 8 / 1366);
+				margin-bottom: calc(100vw * 16 / 1366);
+			}
+			#dondecomprar  .store section.map .info p {
+				margin-top: calc(100vw * 10 / 1366);
+				margin-bottom: calc(100vw * 2 / 1366);
+				font-size: calc(100vw * 16 / 1366);
+				padding-left: calc(100vw * 30 / 1366);
+			}
+			#dondecomprar .store section.map #mapa.tabs .mapa .bt-localizarme {
+			  width: 180px;
+			  height: 56px;
+			  background: black;
+			  border: none;
+			  border-radius: 4px;
+			  position: absolute;
+			  top: 30px;
+			  right: 35px;
+			  text-align: center;
+			  padding: 10px 20px;
+			  cursor: pointer;
+			}
+			#dondecomprar .store section.map #mapa.tabs .mapa .bt-localizarme .icon {
+			  float: left;
+			  width: 26px;
+			  height: 26px;
+			  margin-right: 15px;
+			  background: url(../images/store-locator-icon-localizarme.png) no-repeat left center / cover;
+			}
+			#dondecomprar .store section.map #mapa.tabs .mapa .bt-localizarme p {
+			  float: right;
+			  color: #fff;
+			  font-size: 0.7em;
+			  font-weight: 600;
+			  text-transform: uppercase;
+			  line-height: 26px;
+			}
+			/* Punto Elegido */
+			#dondecomprar .store section.map .punto-elegido {
+			  width: 360px;
+			  min-height: 140px;
+			  background: #FFF;
+			  border-radius: 4px;
+			  padding: 24px 25px;
+			  text-align: left;
+			  -webkit-box-shadow: 0px 0px 70px 6px rgba(0,0,0,0.14);
+			  -moz-box-shadow: 0px 0px 70px 6px rgba(0,0,0,0.14);
+			  box-shadow: 0px 0px 70px 6px rgba(0,0,0,0.14);
+			}
+			#dondecomprar .store section.map .punto-elegido:after {
+			  top: calc(100% - 1px);
+			  left: 50%;
+			  border: solid transparent;
+			  content: " ";
+			  height: 0;
+			  width: 0;
+			  position: absolute;
+			  pointer-events: none;
+			  border-color: rgba(255, 255, 255, 0);
+			  border-top-color: #ffffff;
+			  border-width: 10px;
+			  margin-left: -10px;
+			}
+			#dondecomprar .store section.map .info h3 {
+			  color: #000;
+			  font-size: 1.5em;
+			  font-weight: bold;
+			  padding-bottom: 8px;
+			  margin-bottom: 16px;
+			  border-bottom: 1px solid #f5f5f5;
+			}
+			#dondecomprar .store section.map .info p {
+			  margin-top: 10px;
+			  margin-bottom: 2px;
+			  text-transform: uppercase;
+			  text-transform: initial;
+			  font-size: 1em;
+			  padding-left: 30px;
+			  width:100%;
+			  float:left;
+			}
+			#dondecomprar .store section.map .info .direccion {
+			  background: url(../images/store-locator-icon-direccion.png) no-repeat left center / auto 15px;
+			}
+			#dondecomprar .store section.map .info .telefono {
+			  background: url(../images/store-locator-icon-telefono.png) no-repeat left center / auto 15px;
+			}
+			/* Puntos Venta */
+			#dondecomprar .store section.map .puntos-venta {
+			  width: 100%;
+			  height: auto;
+			  padding: 0;
+			  height: 580px;
+			  overflow: auto;
+			  border-top: 1px solid #d7d7d7;
+			  border-bottom: 1px solid #d7d7d7;
+			}
+			#dondecomprar .store section.map .stores-items {
+			  height: 100%;
+			  margin-bottom: 0;
+			}
+			#dondecomprar .store section.map .stores-items > li {
+			  padding: 15px 20px;
+			  display: table;
+			  width: 100%;
+			  border-bottom: 1px solid #d7d7d7;
+			  cursor: pointer;
+			}
+			#dondecomprar .store section.map .stores-items > li a {
+			  width: 100%;
+			  height: 100%;
+			  display: block;
+			  color: #626262;
+			}
+			#dondecomprar .store section.map .stores-items > li.active {
+			  background: #f3f3f3;
+			}
+			#dondecomprar .store section.map .stores-items > li:last-child {
+			  border-bottom: none;
+			}
+			#dondecomprar .store section.map .stores-items > li .info {
+			  width: 100%;
+			  position: relative;
+			  float: left;
+			  text-align: left;
+			  margin-left: 20px;
+			  padding-bottom: 20px;
+			  /*border-bottom: 1px solid #d7d7d7;*/
+			}
+			#dondecomprar .store section.map .stores-items > li .info:before {
+			  content: "";
+			  width: 21px;
+			  height: 35px;
+			  display: block;
+			  position: absolute;
+			  left: -50px;
+			  top: 0;
+			  background: url(../images/store-locator-icon-pinmap.png) no-repeat left center / cover;
+			}
+			#dondecomprar .store section.map .stores-items > li h3 {
+			  border: none;
+			}
+			#dondecomprar .store section.map .stores-items > li .icons,
+			#dondecomprar .store section.map .stores-items > li .icons ul {
+			  width: 100%;
+			  display: table;
+			}
+			#dondecomprar .store section.map .stores-items > li .icons ul {
+			  padding: 20px 0 0 0;
+			  margin-left: 20px;
+			}
+			#dondecomprar .store section.map .stores-items > li .icons li {
+			  /*display: inline-block;*/
+			  float: left;
+			  width: 16.6%;
+			  height: 30px;
+			  /*max-width: 36px;*/
+			  margin-bottom: 10px;
+			  /*margin-left: 25px;*/
+			  position: relative;
+			}
+			#dondecomprar .store section.map .stores-items > li .icons li img {
+			  width: 40px;
+			  height: 30px;
+			  width: auto;
+			}
+			#dondecomprar .store section.map .stores-items > li .icons li.ventas-alimentos {
+			  max-width: 80px;
+			  /*margin-left: 0;*/
+			}
+			#dondecomprar .store section.map .stores-items > li .icons li.ventas-alimentos img {
+			  width: 60px;
+			}
+			#dondecomprar .store section.map .stores-items > li .icons li:after {
+			  content: "";
+			  z-index: 999999;
+			  padding: 5px 8px;
+			  font-size: 0.9em;
+			  line-height: 1;
+			  color: #fff;
+			  background: black /*#452e7f*/;
+			  position: absolute;
+			  left: 50%;
+			  top: -5px;
+			  border-radius: 4px;
+			  display: block;
+			  opacity: 0;
+			  -webkit-transition:all 0.3s ease-out;  /* Chrome y Safari */
+			  -o-transition:all 0.3s ease-out;  /* Opera */
+			  -moz-transition:all 0.3s ease-out;  /* Mozilla Firefox */
+			  -ms-transition:all 0.3s ease-out;   /* Internet Explorer */
+			  transition:all 0.3s ease-out;  /* W3C */
+			  -webkit-box-shadow: -1px -1px 1px 1px rgba(0,0,0,0.2);
+			  -moz-box-shadow: -1px -1px 1px 1px rgba(0,0,0,0.2);
+			  box-shadow: -1px -1px 1px 1px rgba(0,0,0,0.2);
+			}
+			#dondecomprar .store section.map .stores-items > li .icons li.logo:after {
+			  display: none !important;
+			}
+			#dondecomprar .store section.map .stores-items > li .icons li.delivery:after {
+			  content: "Delivery";
+			}
+			#dondecomprar .store section.map .stores-items > li .icons li.accesorios:after {
+			  content: "Accesorios";
+			}
+			#dondecomprar .store section.map .stores-items > li .icons li.peluqueria:after {
+			  content: "Peluqueria";
+			}
+			#dondecomprar .store section.map .stores-items > li .icons li.veterinaria:after {
+			  content: "Veterinaria";
+			}
+			#dondecomprar .store section.map .stores-items > li .icons li.bano:after {
+			  content: "Baño";
+			}
+			#dondecomprar .store section.map .stores-items > li .icons li.clinica:after {
+			  content: "Clínica";
+			}
+			#dondecomprar .store section.map .stores-items > li .icons li.ventas-alimentos:after {
+			  content: "Ventas Alimentos";
+			}
+
+
+			#dondecomprar .store section.map .stores-items > li .icons li:hover:after {
+			  opacity: 1;
+			}
+			
+			
+@media (max-width: 1366px) {
+
+	/* ------- -- STORE LOCATOR -- ------- */
+	#dondecomprar .storeh1.titulo {
+		font-size: calc(100vw * 33 / 1366);   
+		padding-top: calc(100vw * 30 / 1366);
+		margin-bottom: calc(100vw * 40 / 1366);
+	}
+	#dondecomprar .store.search-content.calle {
+	  width: calc(70% - calc(100vw * 40 / 1366));
+	}
+	#dondecomprar .store.search-content {
+	  height: calc(100vw * 56 / 1366);
+	  margin-bottom: calc(100vw * 20 / 1366);
+	}
+	#dondecomprar .store.search input {
+	  height: calc(100vw * 56 / 1366);
+	  padding-left: calc(100vw * 20 / 1366);
+	  padding-right: calc(100vw * 60 / 1366);
+	}
+	#dondecomprar .store.search-content button {
+	  width: calc(100vw * 56 / 1366);
+	  height: calc(100vw * 56 / 1366);
+	  font-size: calc(100vw * 20 / 1366);
+	}
+	#dondecomprar .store.check-content > h3 {
+	  font-size: calc(100vw * 20 / 1366);
+	  font-weight: normal;
+	  padding-top: calc(100vw * 15 / 1366);
+	}
+	#dondecomprar .store.check-content > div.checkbox {
+	  padding-left: calc(100vw * 20 / 1366);
+	}
+	#dondecomprar .store.check-content label {
+		font-size: calc(100vw * 13 / 1366);
+		line-height: calc(100vw * 22 / 1366);
+		width: calc(100vw * 90 / 1366);
+		height: calc(100vw * 90 / 1366);  
+		margin-right: calc(100vw * 10 / 1366);  
+	}
+	#dondecomprar .store.check-content label .checkmark {
+		height: calc(100vw * 90 / 1366);
+		width: calc(100vw * 90 / 1366);
+		border-radius: calc(100vw * 12 / 1366);
+		padding-top: calc(100vw * 14 / 1366);    
+	}
+	#dondecomprar .store.check-content label .checkmark img {
+	  width: calc(100vw * 40 / 1366);
+	}
+	#dondecomprar .store.check-content label:last-child .checkmark img {
+		width: calc(100vw * 78 / 1366);
+	}
+	#dondecomprar .store.check-content label .checkmark p {
+	  margin-top: calc(100vw * 4 / 1366);
+	}
+	.arrow-link {
+	  width: calc(100vw * 24 / 1366);
+	  height: calc(100vw * 15 / 1366);
+	}
+	/* -- MAPA -- */
+	#dondecomprar .storesection.map {
+	  height: calc(100vw * 580 / 1366);
+	}
+	/* Tabs Menu */
+	#dondecomprar .storesection.map .tabs-menu {
+	  display: none;
+	}
+	/* Tabs */
+	#dondecomprar .storesection.map #listado.tabs {
+	  width: calc(100vw * 480 / 1366);
+	}
+	#dondecomprar .storesection.map #mapa.tabs {
+	  width: calc(100% - calc(100vw * 480 / 1366));
+	  height: calc(100vw * 580 / 1366);
+	}
+
+	#dondecomprar .storesection.map #mapa.tabs .mapa #map {
+		height: 100%;
+	}
+
+
+
+	/* Mapa */
+	#dondecomprar .storesection.map #mapa.tabs .mapa .bt-localizarme {
+	  width: calc(100vw * 180 / 1366);
+	  height: calc(100vw * 56 / 1366);
+	  top: calc(100vw * 30 / 1366);
+	  right: calc(100vw * 35 / 1366);
+	  padding: calc(100vw * 10 / 1366) calc(100vw * 20 / 1366);
+	}
+	#dondecomprar .storesection.map #mapa.tabs .mapa .bt-localizarme .icon {
+	  width: calc(100vw * 26 / 1366);
+	  height: calc(100vw * 26 / 1366);
+	  margin-right: calc(100vw * 15 / 1366);
+	}
+	#dondecomprar .storesection.map #mapa.tabs .mapa .bt-localizarme p {
+	  font-size: calc(100vw * 12 / 1366);
+	  line-height: calc(100vw * 26 / 1366);
+	}
+	/* Punto Elegido */
+	#dondecomprar .storesection.map .punto-elegido {
+	  width: calc(100vw * 360 / 1366);
+	  min-height: calc(100vw * 140 / 1366);
+	  padding: calc(100vw * 24 / 1366) calc(100vw * 25 / 1366);
+	}
+	#dondecomprar .storesection.map .info h3 {
+	  font-size: calc(100vw * 20 / 1366);
+	  padding-bottom: calc(100vw * 8 / 1366);
+	  margin-bottom: calc(100vw * 16 / 1366);
+	}
+	#dondecomprar .storesection.map .info p {
+	  margin-top: calc(100vw * 10 / 1366);
+	  margin-bottom: calc(100vw * 2 / 1366);
+	  font-size: calc(100vw * 16 / 1366);
+	  padding-left: calc(100vw * 30 / 1366);
+	}
+	/* Puntos Venta */
+	#dondecomprar .storesection.map .puntos-venta {
+	  height: calc(100vw * 580 / 1366);
+	}
+	#dondecomprar .storesection.map .stores-items > li {
+	  padding: calc(100vw * 25 / 1366) calc(100vw * 60 / 1366);
+	}
+	#dondecomprar .storesection.map .stores-items > li .info {
+	  margin-left: calc(100vw * 20 / 1366);
+	  padding-bottom: calc(100vw * 20 / 1366);
+	}
+	#dondecomprar .storesection.map .stores-items > li .info:before {
+	  width: calc(100vw * 21 / 1366);
+	  height: calc(100vw * 35 / 1366);
+	  left: calc(100vw * -50 / 1366);
+	}
+	#dondecomprar .storesection.map .stores-items > li .icons ul {
+		padding: calc(100vw * 20 / 1366) 0 0 0;
+		margin-left: calc(100vw * 20 / 1366);
+	}
+	#dondecomprar .storesection.map .stores-items > li .icons li {
+		margin-bottom: calc(100vw * 10 / 1366);
+		height: calc(100vw * 30 / 1366);
+	}
+	#dondecomprar .storesection.map .stores-items > li .icons li img {
+	  height: calc(100vw * 30 / 1366);
+	}
+	#dondecomprar .storesection.map .stores-items > li .icons li.ventas-alimentos {
+	  max-width: calc(100vw * 80 / 1366);
+	}
+	#dondecomprar .storesection.map .stores-items > li .icons li.ventas-alimentos img {
+	  width: calc(100vw * 60 / 1366);
+	}
+
+	#dondecomprar .storesection.map .stores-items > li .icons li.logo {
+	  max-width: calc(100vw * 80 / 1366);
+	}
+	#dondecomprar .storesection.map .stores-items > li .icons li:after {
+	  padding: calc(100vw * 5 / 1366) calc(100vw * 8 / 1366);
+	  font-size: 0.9em;
+	  top: calc(100vw * -5 / 1366);
+	}
+
+}
+
+
+
+@media (max-width: 1000px) {
+
+	/* ------- -- STORE LOCATOR -- ------- */
+	#dondecomprar .storeh1.titulo {
+		font-size: calc(100vw * 33 / 420);   
+		padding-top: calc(100vw * 30 / 420);
+		margin-bottom: calc(100vw * 40 / 420);
+	}
+	#dondecomprar .store.search-content.calle,
+	#dondecomprar .store.search-content.postal {
+		width: 100%;
+		border: none;
+		border-bottom: 1px solid #cccccc;
+	}
+	#dondecomprar .store.search-content {
+	  height: calc(100vw * 56 / 420);
+	  margin-bottom: calc(100vw * 20 / 420);
+	  border-radius: 0;
+	}
+	#dondecomprar .store.search input {
+	  height: calc(100vw * 56 / 420);
+	  padding-left: calc(100vw * 20 / 420);
+	  padding-right: calc(100vw * 60 / 420);
+	}
+	#dondecomprar .store.search-content button {
+	  width: calc(100vw * 56 / 420);
+	  height: calc(100vw * 56 / 420);
+	  font-size: calc(100vw * 20 / 420);
+	  background: transparent;
+	}
+	#dondecomprar .store.check-content > h3 {
+	  width: 100%;
+	  font-size: calc(100vw * 20 / 420);
+	  font-weight: normal;
+	  padding-top: calc(100vw * 15 / 420);
+	}
+	#dondecomprar .store.check-content > div.checkbox {
+	  padding-left: 0;
+	  padding-top: 20px;
+	}
+	#dondecomprar .store.check-content label {
+		font-size: calc(100vw * 13 / 420);
+		line-height: calc(100vw * 22 / 420);
+		width: calc(100vw * 86 / 420);
+		height: calc(100vw * 86 / 420);  
+		margin-right: calc(100vw * 6 / 420);  
+	}
+	#dondecomprar .store.check-content label .checkmark {
+		height: calc(100vw * 86 / 420);
+		width: calc(100vw * 86 / 420);
+		border-radius: calc(100vw * 12 / 420);
+		padding-top: calc(100vw * 14 / 420);    
+	}
+	#dondecomprar .store.check-content label .checkmark img {
+	  width: calc(100vw * 40 / 420);
+	}
+	#dondecomprar .store.check-content label:last-child .checkmark img {
+		width: calc(100vw * 78 / 420);
+	}
+	#dondecomprar .store.check-content label .checkmark p {
+	  margin-top: calc(100vw * 4 / 420);
+	}
+	.arrow-link {
+	  width: calc(100vw * 24 / 420);
+	  height: calc(100vw * 15 / 420);
+	}
+	/* -- MAPA -- */
+	#dondecomprar .storesection.map {
+	  height: auto;
+	}
+	/* Tabs Menu */
+	#dondecomprar .storesection.map .tabs-menu {
+	display: block;
+	}
+	#dondecomprar .storesection.map #listado.tabs {
+	display: none;
+	}
+	#dondecomprar .storesection.map .tabs-menu button {
+		width: 50%;
+		float: left;
+		background: none;
+		border: none;
+		border-bottom: 5px solid transparent;
+		height: calc(100vw * 50 / 420);;
+		font-size: calc(100vw * 19 / 420);
+		font-weight: 600;
+		text-transform: uppercase;
+	}
+	#dondecomprar .storesection.map .tabs-menu button.activo {
+		color: black;
+		/*border-bottom: 5px solid #452e7f;*/
+	}
+	/* Tabs */
+	#dondecomprar .storesection.map #listado.tabs {
+	  width: 100%;
+	}
+	#dondecomprar .storesection.map #mapa.tabs {
+	  width: 100%;
+	  height: calc(100vw * 580 / 420);
+	}
+	/* Mapa */
+	#dondecomprar .storesection.map #mapa.tabs .mapa .bt-localizarme {
+	  width: calc(100vw * 180 / 420);
+	  height: calc(100vw * 56 / 420);
+	  top: calc(100vw * 30 / 420);
+	  right: calc(100vw * 35 / 420);
+	  padding: calc(100vw * 10 / 420) calc(100vw * 20 / 420);
+	}
+	#dondecomprar .storesection.map #mapa.tabs .mapa .bt-localizarme .icon {
+	  width: calc(100vw * 26 / 420);
+	  height: calc(100vw * 26 / 420);
+	  margin-right: calc(100vw * 15 / 420);
+	}
+	#dondecomprar .storesection.map #mapa.tabs .mapa .bt-localizarme p {
+	  font-size: calc(100vw * 12 / 420);
+	  line-height: calc(100vw * 26 / 420);
+	}
+	/* Punto Elegido */
+	#dondecomprar .storesection.map .punto-elegido {
+	  width: calc(100vw * 360 / 420);
+	  min-height: calc(100vw * 140 / 420);
+	  padding: calc(100vw * 24 / 420) calc(100vw * 25 / 420);
+	}
+	#dondecomprar .storesection.map .info h3 {
+	  font-size: calc(100vw * 20 / 420);
+	  padding-bottom: calc(100vw * 8 / 420);
+	  margin-bottom: calc(100vw * 16 / 420);
+	}
+	#dondecomprar .storesection.map .info p {
+	  margin-top: calc(100vw * 10 / 420);
+	  margin-bottom: calc(100vw * 2 / 420);
+	  font-size: calc(100vw * 16 / 420);
+	  padding-left: calc(100vw * 30 / 420);
+	}
+	/* Puntos Venta */
+	#dondecomprar .storesection.map .puntos-venta {
+	  /*height: calc(100vw * 580 / 420);*/
+	  height: auto;
+	}
+	#dondecomprar .storesection.map .stores-items > li {
+	  padding: calc(100vw * 25 / 420) calc(100vw * 60 / 420);
+	}
+	#dondecomprar .storesection.map .stores-items > li .info {
+	  margin-left: calc(100vw * 20 / 420);
+	  padding-bottom: calc(100vw * 20 / 420);
+	}
+	#dondecomprar .storesection.map .stores-items > li .info:before {
+	  width: calc(100vw * 21 / 420);
+	  height: calc(100vw * 35 / 420);
+	  left: calc(100vw * -50 / 420);
+	}
+	#dondecomprar .storesection.map .stores-items > li .icons ul {
+	  padding: calc(100vw * 20 / 420) 0 0 0;
+	  margin-left: calc(100vw * 20 / 420);
+	}
+	#dondecomprar .storesection.map .stores-items > li .icons li {
+		margin-bottom: calc(100vw * 10 / 420);
+		height: calc(100vw * 30 / 420);
+	}
+	#dondecomprar .storesection.map .stores-items > li .icons li img {
+	  height: calc(100vw * 30 / 420);
+	}
+	#dondecomprar .storesection.map .stores-items > li .icons li.ventas-alimentos {
+	  max-width: calc(100vw * 80 / 420);
+	}
+	#dondecomprar .storesection.map .stores-items > li .icons li.ventas-alimentos img {
+	  width: calc(100vw * 60 / 420);
+	}
+	#dondecomprar .storesection.map .stores-items > li .icons li.logo {
+	  max-width: calc(100vw * 80 / 420);
+	}
+	#dondecomprar .storesection.map .stores-items > li .icons li:after {
+	  padding: calc(100vw * 5 / 420) calc(100vw * 8 / 420);
+	  font-size: 0.9em;
+	  top: calc(100vw * -5 / 420);
+	}
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ------- -- FIN STORE LOCATOR -- ------- */
+	@media only screen and (min-width: 767px) and (max-width: 991px){
+		.page1{
+			background-size: 120%;
+			background-position: center;
+		}
+		body#bowl .container #selectedInfo{
+			/*position: relative;
+			float: right;
+			margin-top: -100px;*/
+		}
+		body#bowl .container #selectedInfo h3{
+			width: 100%;
+			font-size: 30px;
+			line-height: 30px;
+			margin-top: 30px;
+		}
+		body#bowl .container #selectedInfo p {
+			width: 100%;
+			font-size: 11px;
+			line-height: 12px;
+			margin-top: 20px;
+		}
+		body#bowl .container .ingredientes img.bowl-ingredientes{
+			margin-top: 100px;
+		}
+		body#bowl .container ul li a{
+			font-size: 13px;
+			line-height: 12px;
+		}
+		
+		body#bowl .container .ingredientes img.bowl-ingredientes{
+			width: 100%;
+			margin-top: 0;
+			margin-left: 10px;
+		}
+		body#bowl .container #selectedInfo{
+			margin-top: -85px;
+			padding: 0;
+		}
+		body#bowl .page1{
+			background-size: 140%;
+		}
+		body#bowl .container .dots .dot{
+			transform: scale(0.8);
+		}
+		body#bowl .container #selectedInfo img.titleRibbon{
+			margin-top: 15px;
+		}
+		
+			body#bowl .container .dots .dot.pavo{
+					display: block;
+					margin-top: 80px;
+					margin-left: 140px;
+				}
+				body#bowl .container .dots .dot.cerdo{
+					margin-top: 70px;
+					margin-left: 70px;
+				}
+				body#bowl .container .dots .dot.huevo{
+					margin-top: 100px;
+					margin-left: 180px;
+				}
+				body#bowl .container .dots .dot.blueberries{
+					margin-top: 150px;
+					margin-left: 60px;
+				}
+				body#bowl .container .dots .dot.te-verde{
+					margin-top: 190px;
+					margin-left: 40px;
+				}
+				body#bowl .container .dots .dot.zapallo{
+					margin-top: 200px;
+					margin-left: 100px;
+				}
+				body#bowl .container .dots .dot.hinojo{
+					margin-top: 165px;
+					margin-left: 175px;
+				}
+				body#bowl .container .dots .dot.manzanilla{
+					margin-top: 145px;
+					margin-left: 185px;
+				}
+				body#bowl .container .dots .dot.jengibre{
+					margin-top: 150px;
+					margin-left: 215px;
+				}
+				body#bowl .container .dots .dot.arroz{
+					margin-top: 175px;
+					margin-left: 150px;
+				}
+				body#bowl .container .dots .dot.menta{
+					margin-top: 190px;
+					margin-left: 140px;
+				}
+				body#bowl .container .dots .dot.extracto{
+					margin-top: 110px;
+					margin-left: 130px;
+				}
+				body#bowl .container .dots .dot.aceites{
+					margin-top: 210px;
+					margin-left: 180px;
+				}
+				
+		.ingredientes .ingrediente a strong{
+			font-size: 7px;
+		}
+		.ingredientes .ingrediente a span{
+			font-size: 13px;
+		}
+		.ingredientes .ingrediente a img.lines{
+			width: 15px;
+		}
+		.ingredientes .titulo h3{
+			font-size: 30px;
+			line-height: 30px;
+		}
+		
+		body#ingredientes .page1{
+			height: auto !important;
+		}
+		body#ingredientes .page1 .info h1{
+			font-size: 26px;
+			line-height: 26px;
+		}
+		body#ingredientes .page1 .info p{
+			font-size: 12px;
+			line-height: 15px;
+		}
+		body#ingredientes .page1 .info{
+			margin-top: 50px;
+		}
+		body#ingredientes .page1 .info .linea{
+			margin: 10px 0;
+		}
+		
+		.verduras .premiumBack{
+			margin-top: 250px;
+		}
+		#section1{
+			min-height: 800px;
+			background-size: 200%;
+		}
+		.page1{
+			background-size: auto 100%;
+		}
+		header #menu ul li a{
+			font-size: 21px;
+			padding: 6px 0;
+		}
+		.backImages img{
+			width: 30%;
+			height: auto !important;
+			margin-top: 100px;
+		}
+			body#product .productInfo{
+				margin-top: 25px;
+			}
+			body#product .productName, body#product .productProteins, body#product .productLinks{
+				opacity: 1 !important;
+				display: block !important;
+			}
+			
+		body#bowl.pack .container #mySpriteSpin{
+			margin-top: 80px;
+		}
+		body#bowl.pack .container #mySpriteSpin, body#bowl.pack .container #mySpriteSpin .spritespin-stage{
+			width: 100% !important;
+		}
+	}
+	@media only screen and (min-width: 991px) and (max-width: 1200px){
+		body#bowl .container #selectedInfo h3{
+			font-size: 40px;
+		}
+		body#bowl .container #selectedInfo  p {
+			font-size: 16px;
+			line-height: 22px;
+			margin-top: 10px;
+		}
+		body#bowl .container .ingredientes img.bowl-ingredientes{
+			margin-top: -120px;
+		}
+		body#bowl .container .dots .dot.pavo{
+			margin-top: 160px;
+			margin-left: 130px;
+		}
+		body#bowl .container .dots .dot.cerdo{
+			margin-top: 320px;
+			margin-left: 80px;
+		}
+		body#bowl .container .dots .dot.aceites{
+			margin-top: 170px;
+			margin-left: 300px;
+		}
+		body#bowl .container .dots .dot.blueberries{
+			margin-top: 400px;
+			margin-left: 230px;
+		}
+		body#bowl .container .dots .dot.zapallo{
+			margin-top: 310px;
+			margin-left: 340px;
+		}
+		body#bowl .container .dots .dot.mix{
+			margin-top: 150px;
+			margin-left: 240px;
+		}
+		body#bowl .container .dots .dot.arroz{
+			margin-top: 150px;
+			margin-left: 280px;
+		}
+		body#bowl .container .dots .dot.extracto{
+			margin-top: 260px;
+			margin-left: 175px;
+		}
+		.verduras .premiumBack{
+			margin-top: 150px;
+		}
+		#section1{
+			min-height: 1000px;
+			background-size: 200%;
+		}
+		.page1{
+			background-size: auto 100%;
+		}
+		header #menu #logo-menu img{
+			width: 75%;
+			margin: 0 12.5%;
+		}
+		header #menu ul li a{
+			padding: 6px 0;
+		}
+		
+		.ingredientes .ingrediente a span{
+			font-size: 18px;
+		}
+		.ingredientes .ingrediente a img.lines{
+			width: 20px;
+		}
+		.ingredientes .titulo h3{
+			font-size: 40px;
+			line-height: 40px;
+		}
+		
+		body#ingredientes .page1 .info{
+			margin-top: 115px;
+		}
+		body#ingredientes .page1 .info .linea {
+			margin: 10px 0;
+		}
+		body#ingredientes .page1 .info h1{
+			font-size: 35px;
+			line-height: 35px;
+		}
+		body#ingredientes .page1 .info p{
+			font-size: 13px;
+			line-height: 16px;
+		}
+		body#ingredientes .page1{
+			height: auto !important;
+		}
+		
+		body#bowl.pack .container .dots .dot-1{
+			display: block;
+			margin-top: 170px;
+			margin-left: 40%;
+		}
+		body#bowl.pack .container .dots .dot-2{
+			margin-top: 35px;
+			margin-left: 12%;
+		}
+		body#bowl.pack .container .dots .dot-3{
+			margin-top: 32px;
+			margin-left: 130px;
+		}
+		body#bowl.pack .container .dots .dot-4{
+			margin-top: 0px;
+			margin-left: 76%;
+		}
+		body#bowl.pack .container .dots .dot-5{
+			margin-top: 120px;
+			margin-left: 75%;
+		}
+		body#bowl.pack .container .dots .dot-6{
+			margin-top: 220px;
+			margin-left: 75%;
+		}
+		body#bowl.pack .container .dots .dot-7{
+			margin-top: 400px;
+			margin-left: 73%;
+		}
+	}
+	
+	@media only screen and (max-width: 767px) {
+		body#bowl .container div{
+		    float: none;
+		    display: inline-block;
+            margin: 0;
+            padding: 0;
+		}
+		body#bowl .container #selectedInfo .selectedInfoText{
+		    float: left;
+		    width: 80%;
+            text-align: center;
+            margin: 0 10%;
+		}
+		/* ------- -- STORE LOCATOR -- ------- */
+		#dondecomprar .store h1.titulo {
+			font-size: calc(100vw * 33 / 420);   
+			padding-top: calc(100vw * 30 / 420);
+			margin-bottom: calc(100vw * 40 / 420);
+		}
+		#dondecomprar .store .search-content.calle,
+		#dondecomprar .store .search-content.postal {
+			width: 100%;
+			border: none;
+			border-bottom: 1px solid #cccccc;
+		}
+		#dondecomprar .store .search-content {
+		  height: calc(100vw * 56 / 420);
+		  margin-bottom: calc(100vw * 20 / 420);
+		  border-radius: 0;
+		}
+		#dondecomprar .store .search input {
+		  padding-left: calc(100vw * 20 / 420);
+		  padding-right: calc(100vw * 60 / 420);
+		}
+		#dondecomprar .store .search-content button {
+		  width: calc(100vw * 56 / 420);
+		  height: calc(100vw * 56 / 420);
+		  font-size: calc(100vw * 20 / 420);
+		  background: transparent;
+		}
+		#dondecomprar .store .check-content > h3 {
+		  width: 100%;
+		  font-size: calc(100vw * 20 / 420);
+		  font-weight: normal;
+		  padding-top: calc(100vw * 15 / 420);
+		}
+		#dondecomprar .store .check-content > div.checkbox {
+		  padding-left: 0;
+		  padding-top: 20px;
+		}
+		#dondecomprar .store .check-content label {
+			font-size: calc(100vw * 13 / 420);
+			line-height: calc(100vw * 22 / 420);
+			width: calc(100vw * 86 / 420);
+			height: calc(100vw * 86 / 420);  
+			margin-right: calc(100vw * 6 / 420);  
+		}
+		#dondecomprar .store .check-content label .checkmark {
+			height: calc(100vw * 86 / 420);
+			width: calc(100vw * 86 / 420);
+			border-radius: calc(100vw * 12 / 420);
+			padding-top: calc(100vw * 14 / 420);    
+		}
+		#dondecomprar .store .check-content label .checkmark img {
+		  width: calc(100vw * 40 / 420);
+		}
+		#dondecomprar .store .check-content label:last-child .checkmark img {
+			width: calc(100vw * 78 / 420);
+		}
+		#dondecomprar .store .check-content label .checkmark p {
+		  margin-top: calc(100vw * 4 / 420);
+		}
+		.arrow-link {
+		  width: calc(100vw * 24 / 420);
+		  height: calc(100vw * 15 / 420);
+		}
+		/* -- MAPA -- */
+		#dondecomprar .store section.map {
+		  height: auto;
+		}
+		/* Tabs Menu */
+		#dondecomprar .store section.map .tabs-menu {
+		display: block;
+		}
+		#dondecomprar .store section.map #listado.tabs {
+		display: none;
+		}
+		#dondecomprar .store section.map .tabs-menu button {
+			width: 50%;
+			float: left;
+			background: none;
+			border: none;
+			border-bottom: 5px solid transparent;
+			height: calc(100vw * 50 / 420);;
+			font-size: calc(100vw * 19 / 420);
+			font-weight: 600;
+			text-transform: uppercase;
+		}
+		#dondecomprar .store section.map .tabs-menu button.activo {
+			font-weight:800;		
+		}
+		/* Tabs */
+		#dondecomprar .store section.map #listado.tabs {
+		  width: 100%;
+		}
+		#dondecomprar .store section.map #mapa.tabs {
+		  width: 100%;
+		  height: calc(100vw * 580 / 420);
+		}
+		/* Mapa */
+		#dondecomprar .store section.map #mapa.tabs .mapa .bt-localizarme {
+		  width: calc(100vw * 180 / 420);
+		  height: calc(100vw * 56 / 420);
+		  top: calc(100vw * 30 / 420);
+		  right: calc(100vw * 35 / 420);
+		  padding: calc(100vw * 10 / 420) calc(100vw * 20 / 420);
+		}
+		#dondecomprar .store section.map #mapa.tabs .mapa .bt-localizarme .icon {
+		  width: calc(100vw * 26 / 420);
+		  height: calc(100vw * 26 / 420);
+		  margin-right: calc(100vw * 15 / 420);
+		}
+		#dondecomprar .store section.map #mapa.tabs .mapa .bt-localizarme p {
+		  font-size: calc(100vw * 12 / 420);
+		  line-height: calc(100vw * 26 / 420);
+		}
+		/* Punto Elegido */
+		#dondecomprar .store section.map .punto-elegido {
+		  width: calc(100vw * 360 / 420);
+		  min-height: calc(100vw * 140 / 420);
+		  padding: calc(100vw * 24 / 420) calc(100vw * 25 / 420);
+		}
+		#dondecomprar .store section.map .info h3 {
+		  font-size: calc(100vw * 20 / 420);
+		  padding-bottom: calc(100vw * 8 / 420);
+		  margin-bottom: calc(100vw * 16 / 420);
+		}
+		#dondecomprar .store section.map .info p {
+		  margin-top: calc(100vw * 10 / 420);
+		  margin-bottom: calc(100vw * 2 / 420);
+		  font-size: calc(100vw * 16 / 420);
+		  padding-left: calc(100vw * 30 / 420);
+		}
+		/* Puntos Venta */
+		#dondecomprar .store section.map .puntos-venta {
+		  /*height: calc(100vw * 580 / 420);*/
+		  height: auto;
+		}
+		#dondecomprar .store section.map #dondecomprar .stores-items > li {
+		  padding: calc(100vw * 25 / 420) calc(100vw * 60 / 420);
+		}
+		#dondecomprar .store section.map #dondecomprar .stores-items > li .info {
+		  margin-left: calc(100vw * 20 / 420);
+		  padding-bottom: calc(100vw * 20 / 420);
+		}
+		#dondecomprar .store section.map #dondecomprar .stores-items > li .info:before {
+		  width: calc(100vw * 21 / 420);
+		  height: calc(100vw * 35 / 420);
+		  left: calc(100vw * -50 / 420);
+		}
+		#dondecomprar .store section.map #dondecomprar .stores-items > li .icons ul {
+		  padding: calc(100vw * 20 / 420) 0 0 0;
+		  margin-left: calc(100vw * 20 / 420);
+		}
+		#dondecomprar .store section.map #dondecomprar .stores-items > li .icons li {
+			margin-bottom: calc(100vw * 10 / 420);
+			height: calc(100vw * 30 / 420);
+		}
+		#dondecomprar .store section.map #dondecomprar .stores-items > li .icons li img {
+		  height: calc(100vw * 30 / 420);
+		}
+		#dondecomprar .store section.map #dondecomprar .stores-items > li .icons li.ventas-alimentos {
+		  max-width: calc(100vw * 80 / 420);
+		}
+		#dondecomprar .store section.map #dondecomprar .stores-items > li .icons li.ventas-alimentos img {
+		  width: calc(100vw * 60 / 420);
+		}
+		#dondecomprar .store section.map #dondecomprar .stores-items > li .icons li.logo {
+		  max-width: calc(100vw * 80 / 420);
+		}
+		#dondecomprar .store section.map #dondecomprar .stores-items > li .icons li:after {
+		  padding: calc(100vw * 5 / 420) calc(100vw * 8 / 420);
+		  font-size: 0.9em;
+		  top: calc(100vw * -5 / 420);
+		}
+
+
+
+		#dondecomprar h1, body#dondecomprar h2 {
+			float: left;
+			font-family: 'Bebas Neue';
+			color: #252525;
+			margin: 0!important;
+			margin-bottom:10px;
+			text-align:left!important;
+		}
+
+		#dondecomprar .form-field {
+			float: left;
+			margin: 5px 0;
+			padding: 0;
+		}
+		#dondecomprar .store .check-content label {     width: 110px; height: 110px;}
+		#dondecomprar .store .check-content {margin-top:0px;margin-bottom:0px}
+		#dondecomprar .store section.map .tabs-menu { display: block;}
+		#dondecomprar .contacto {
+			margin-top: 120px;
+			width: 90%;
+			
+			margin-left: 5%; 
+			margin-right: 5%; 
+			
+			padding: 0;
+		}
+	}
