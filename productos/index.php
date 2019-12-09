@@ -117,7 +117,7 @@
 									<img src="../images/nuevo.png" class="cucarda col-3 wow animated bounceIn">
 									<img src="../images/productos/producto-10.png" alt="Nutrique healthy weight dog" title="Nutrique healthy weight dog">
 									<p class="">
-										Nutrique healthy weight dog
+										Healthy weight dog
 									</p>
 								</a>
 							</div>
@@ -126,7 +126,7 @@
 									<img src="../images/nuevo.png" class="cucarda col-3 wow animated bounceIn">
 									<img src="../images/productos/producto-11.png" alt="Nutrique urinary care cat" title="Nutrique urinary care cat">						
 									<p class="">
-										Nutrique urinary care cat
+										Urinary care cat
 									</p>
 								</a>
 							</div>

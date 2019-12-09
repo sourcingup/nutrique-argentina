@@ -34,6 +34,7 @@
 			<div class="presentaciones col-12">
 				<h3 class="wow animated fadeInRight" data-wow-delay="500ms">Presentaciones: </h3>
 				<img src="images/producto/12kg.png" alt="producto" class="wow animated fadeInRight" data-wow-delay="800ms" />
+				<img src="images/producto/3kg.png" alt="producto" class="wow animated fadeInRight" data-wow-delay="800ms" />
 			</div>
 			</div>
 			<div class="productInfo col-12 col-md-3 offset-md-2">

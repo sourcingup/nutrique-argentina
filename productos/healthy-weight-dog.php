@@ -40,7 +40,7 @@
 			<div class="productInfo col-12 col-md-3 offset-md-2">
 				<div class="col-12 productName" style="padding: 0;">
 					<h2 class="wow animated fadeInUp">Special Care</h2>
-					<h1 class="wow animated fadeInUp">Nutrique healthy weight dog</h1>
+					<h1 class="wow animated fadeInUp">Healthy weight dog</h1>
 					<h3 class="wow animated fadeInUp" data-wow-delay="200ms">perros adultos con tendencia al sobrepeso o con sobrepeso</h3>
 					<img src="images/producto/items-line.png" class="col-12" style="padding: 0;" alt="producto" />
 				</div>

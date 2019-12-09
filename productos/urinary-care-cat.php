@@ -39,7 +39,7 @@
 			<div class="productInfo col-12 col-md-3 offset-md-2">
 				<div class="col-12 productName" style="padding: 0;">
 					<h2 class="wow animated fadeInUp">Special Care</h2>
-					<h1 class="wow animated fadeInUp">nutrique urinary care cat</h1>
+					<h1 class="wow animated fadeInUp">Urinary care cat</h1>
 					<h3 class="wow animated fadeInUp" data-wow-delay="200ms">gatos  adultos con predisposición a trastornos urinarios</h3>
 					<img src="images/producto/items-line.png" class="col-12" style="padding: 0;" alt="producto" />
 				</div>
